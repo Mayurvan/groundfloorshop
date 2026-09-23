@@ -1,0 +1,36 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="office-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#e8f4f8;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#b3d9e8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#office-bg)"/>
+  
+  <!-- Wall -->
+  <rect x="0" y="0" width="400" height="300" fill="none"/>
+  
+  <!-- Windows -->
+  <rect x="20" y="30" width="80" height="100" fill="#87ceeb" stroke="#34495e" stroke-width="2"/>
+  <rect x="130" y="30" width="80" height="100" fill="#87ceeb" stroke="#34495e" stroke-width="2"/>
+  <rect x="240" y="30" width="80" height="100" fill="#87ceeb" stroke="#34495e" stroke-width="2"/>
+  
+  <!-- Desks -->
+  <rect x="40" y="160" width="90" height="60" fill="#8b7355" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="155" y="160" width="90" height="60" fill="#8b7355" stroke="#2c3e50" stroke-width="2"/>
+  <rect x="270" y="160" width="90" height="60" fill="#8b7355" stroke="#2c3e50" stroke-width="2"/>
+  
+  <!-- Chairs -->
+  <circle cx="85" cy="195" r="8" fill="#34495e"/>
+  <circle cx="200" cy="195" r="8" fill="#34495e"/>
+  <circle cx="315" cy="195" r="8" fill="#34495e"/>
+  
+  <!-- Filing cabinet -->
+  <rect x="330" y="180" width="40" height="80" fill="#7f8c8d" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="330" y1="195" x2="370" y2="195" stroke="#2c3e50" stroke-width="1"/>
+  <line x1="330" y1="210" x2="370" y2="210" stroke="#2c3e50" stroke-width="1"/>
+  
+  <!-- Sign -->
+  <text x="200" y="270" text-anchor="middle" font-size="20" font-weight="bold" fill="#2c3e50">OFFICE</text>
+</svg>
