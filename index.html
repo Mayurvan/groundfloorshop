@@ -197,13 +197,47 @@
             height: 220px;
             background-size: cover;
             background-position: center;
-            display: flex;
+            display: none !important;
             align-items: flex-end;
             justify-content: flex-start;
             color: white;
             font-size: 14px;
             position: relative;
             overflow: hidden;
+        }
+
+        .property-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            background: #fafafa;
+        }
+        
+        .property-type-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
+        }
+
+        .property-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 16px;
+            border-bottom: 1px solid #f0f0f0;
+            background: #fafafa;
+        }
+
+        .property-type-label {
+            font-size: 11px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: #666;
         }
         .property-image::after {
             content: '';
@@ -530,11 +564,11 @@
 
     <script>
         // Property Type to Image Mapping
-        const propertyTypeImages = {
-            'Retail Shop': 'linear-gradient(135deg, #FF6B6B 0%, #FFA94D 100%)',
-            'Office Space': 'linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%)',
-            'F&B/Restaurant': 'linear-gradient(135deg, #F7B731 0%, #F368E0 100%)',
-            'Showroom': 'linear-gradient(135deg, #9B59B6 0%, #E91E63 100%)'
+        const propertyTypeColors = {
+            'Retail Shop': '#FF6B6B',
+            'Office Space': '#4ECDC4',
+            'F&B/Restaurant': '#F7B731',
+            'Showroom': '#9B59B6'
         };
 
         // INVENTORY DATA - Central source of truth
@@ -676,7 +710,7 @@
             const grid = document.getElementById('propertyGrid');
 
             grid.innerHTML = filtered.map(p => `
-                <div class="property-card" onclick="openModal('${p.title.replace(/'/g, "\\'")}', '${p.desc.replace(/'/g, "\\'")}', '${p.price}', '${p.size}', '${p.sourcing}')">
+                <div class="property-card" style="border-left: 5px solid ${propertyTypeColors[p.type] || '#999'};" onclick="openModal('${p.title.replace(/'/g, "\\'")}', '${p.desc.replace(/'/g, "\\'")}', '${p.price}', '${p.size}', '${p.sourcing}')">
                     <div class="property-image" style="background-image: ${propertyTypeImages[p.type] || 'linear-gradient(135deg, #34495e 0%, #404e5c 100%)'}">
                         <span class="sourcing-badge ${p.sourcing.toLowerCase()}">${p.sourcing.toUpperCase()}</span>
                     </div>
