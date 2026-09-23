@@ -1,0 +1,35 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="fb-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffe4d6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#ff8c42;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#fb-bg)"/>
+  
+  <!-- Walls -->
+  <rect x="0" y="0" width="400" height="300" fill="none"/>
+  
+  <!-- Ceiling lights -->
+  <circle cx="80" cy="40" r="12" fill="#ffd700" opacity="0.8"/>
+  <circle cx="200" cy="40" r="12" fill="#ffd700" opacity="0.8"/>
+  <circle cx="320" cy="40" r="12" fill="#ffd700" opacity="0.8"/>
+  
+  <!-- Tables -->
+  <rect x="50" y="100" width="70" height="70" fill="#d4a574" stroke="#8b4513" stroke-width="2" rx="4"/>
+  <rect x="165" y="100" width="70" height="70" fill="#d4a574" stroke="#8b4513" stroke-width="2" rx="4"/>
+  <rect x="280" y="100" width="70" height="70" fill="#d4a574" stroke="#8b4513" stroke-width="2" rx="4"/>
+  
+  <!-- Chairs around tables -->
+  <circle cx="45" cy="110" r="6" fill="#34495e"/>
+  <circle cx="130" cy="110" r="6" fill="#34495e"/>
+  <circle cx="160" cy="85" r="6" fill="#34495e"/>
+  <circle cx="210" cy="110" r="6" fill="#34495e"/>
+  <circle cx="275" cy="110" r="6" fill="#34495e"/>
+  <circle cx="360" cy="110" r="6" fill="#34495e"/>
+  
+  <!-- Bar counter -->
+  <rect x="30" y="200" width="340" height="50" fill="#8b4513" stroke="#2c3e50" stroke-width="2"/>
+  <text x="200" y="235" text-anchor="middle" font-size="14" font-weight="bold" fill="white">BAR & DINING</text>
+</svg>
