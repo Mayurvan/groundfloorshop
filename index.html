@@ -84,72 +84,78 @@
         }
         .hero p {
             font-size: 18px;
-            margin-bottom: 35px;
+            margin-bottom: 40px;
             font-weight: 400;
             max-width: 700px;
             margin-left: auto;
             margin-right: auto;
             color: #404e5c;
-            line-height: 1.7;
+            line-height: 1.8;
         }
         .cta-primary {
             background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
             color: white;
-            padding: 15px 45px;
+            padding: 16px 50px;
             border: none;
-            border-radius: 4px;
-            font-weight: 600;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
-            font-size: 15px;
-            font-weight: 600;
+            border-radius: 6px;
+            font-size: 16px;
+            font-weight: 700;
             cursor: pointer;
             transition: all 0.3s;
             letter-spacing: 0.5px;
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.3);
         }
         .cta-primary:hover {
-            background: #2980b9;
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(52, 152, 219, 0.25);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 28px rgba(52, 152, 219, 0.4);
+        }
+        .cta-primary:active {
+            transform: translateY(-1px);
         }
         .filters {
             background: white;
-            padding: 35px;
-            border-radius: 6px;
+            padding: 40px;
+            border-radius: 8px;
             margin-bottom: 50px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             border: 1px solid #e8ecf1;
         }
         .filter-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
+            gap: 25px;
         }
         .filter-group label {
             display: block;
-            font-weight: 600;
-            margin-bottom: 9px;
+            font-weight: 700;
+            margin-bottom: 10px;
             color: #2c3e50;
             font-size: 13px;
             text-transform: uppercase;
-            letter-spacing: 0.5px;
+            letter-spacing: 0.8px;
+            color: #3498db;
         }
         select, input {
             width: 100%;
-            padding: 11px 12px;
-            border: 1px solid #d4dce6;
-            border-radius: 4px;
+            padding: 12px 14px;
+            border: 2px solid #d4dce6;
+            border-radius: 6px;
             font-size: 14px;
-            background: white;
+            background: #f8f9fa;
             cursor: pointer;
             color: #404e5c;
-            transition: border 0.3s;
+            transition: all 0.3s;
+            font-weight: 500;
+        }
+        select:hover, input:hover {
+            border-color: #3498db;
+            background: white;
         }
         select:focus, input:focus {
             outline: none;
             border-color: #3498db;
-            box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+            background: white;
+            box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
         }
         .properties-section {
             margin-bottom: 70px;
@@ -197,47 +203,13 @@
             height: 220px;
             background-size: cover;
             background-position: center;
-            display: none !important;
+            display: flex;
             align-items: flex-end;
             justify-content: flex-start;
             color: white;
             font-size: 14px;
             position: relative;
             overflow: hidden;
-        }
-
-        .property-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 16px;
-            border-bottom: 1px solid #f0f0f0;
-            background: #fafafa;
-        }
-        
-        .property-type-label {
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #666;
-        }
-
-        .property-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 12px 16px;
-            border-bottom: 1px solid #f0f0f0;
-            background: #fafafa;
-        }
-
-        .property-type-label {
-            font-size: 11px;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #666;
         }
         .property-image::after {
             content: '';
@@ -334,16 +306,23 @@
         }
         .close:hover { color: #2c3e50; }
         .about-section {
-            background: white;
+            background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
             padding: 70px 20px;
             margin-bottom: 70px;
-            border-radius: 6px;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
             border: 1px solid #e8ecf1;
         }
         .about-content {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
+        }
+        .about-section h2 {
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 25px;
         }
         .about-section p {
             font-size: 16px;
@@ -353,23 +332,48 @@
         }
         .team-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 35px;
-            margin-top: 45px;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 40px;
+            margin-top: 50px;
         }
         .team-member {
             text-align: center;
+            padding: 25px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border: 1px solid #e8ecf1;
+            transition: all 0.3s;
+        }
+        .team-member:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(52, 152, 219, 0.12);
+            border-color: #3498db;
+        }
+        .team-member-avatar {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 18px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 48px;
+            font-weight: 700;
+            color: white;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.12);
         }
         .member-name {
-            font-weight: 600;
-            margin-top: 15px;
+            font-weight: 700;
             color: #2c3e50;
-            font-size: 16px;
+            font-size: 18px;
+            margin-bottom: 8px;
         }
         .member-title {
-            color: #7f8c8d;
-            font-size: 13px;
-            margin-top: 5px;
+            color: #3498db;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
         }
         .blog-section {
             margin-bottom: 70px;
@@ -381,7 +385,7 @@
         }
         .blog-card {
             background: white;
-            border-radius: 6px;
+            border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 1px 3px rgba(0,0,0,0.08);
             transition: all 0.3s;
@@ -390,19 +394,32 @@
         .blog-card:hover {
             transform: translateY(-4px);
             box-shadow: 0 12px 28px rgba(0,0,0,0.12);
+            border-color: #3498db;
         }
         .blog-image {
             height: 220px;
-            background: linear-gradient(135deg, #34495e 0%, #404e5c 100%);
+            background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .blog-image::after {
+            content: '📰';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 48px;
+            opacity: 0.3;
         }
         .blog-content {
-            padding: 22px;
+            padding: 25px;
         }
         .blog-title {
             font-size: 18px;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 12px;
             color: #2c3e50;
+            line-height: 1.4;
         }
         .blog-excerpt {
             font-size: 14px;
@@ -414,23 +431,42 @@
             color: #3498db;
             font-weight: 600;
             text-decoration: none;
-            transition: color 0.3s;
+            transition: all 0.3s;
             font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
         }
         .read-more:hover {
             color: #2980b9;
+            transform: translateX(4px);
         }
         footer {
-            background: #2c3e50;
+            background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
             color: white;
-            padding: 45px 20px;
+            padding: 50px 20px;
             text-align: center;
             border-top: 1px solid #1a252f;
         }
+        footer h3 {
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+        }
         footer p {
-            margin-bottom: 10px;
-            font-size: 14px;
-            line-height: 1.7;
+            margin-bottom: 12px;
+            font-size: 15px;
+            line-height: 1.8;
+            color: #bdc3c7;
+        }
+        footer a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #2ecc71;
         }
         .result-count {
             margin-bottom: 25px;
@@ -524,15 +560,15 @@
                 <h2>About Ground Floor Shop</h2>
                 <p>Ground Floor Shop is Mumbai's premier marketplace for ground floor commercial real estate. We connect verified landlords, tenants, and investors with transparent pricing and zero hidden fees.</p>
                 <p>Our mission is to simplify commercial property transactions by eliminating unnecessary middlemen, reducing costs, and accelerating deal execution.</p>
-                <h3 style="margin-top: 30px; margin-bottom: 20px; font-size: 22px;">Founding Team</h3>
+                <h3 style="margin-top: 40px; margin-bottom: 30px; font-size: 24px; color: #2c3e50;">Founding Team</h3>
                 <div class="team-grid">
                     <div class="team-member">
-                        <div style="width: 120px; height: 120px; margin: 0 auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%;"></div>
+                        <div class="team-member-avatar" style="background: linear-gradient(135deg, #3498db 0%, #2980b9 100%);">AS</div>
                         <div class="member-name">Amjad Shaikh</div>
                         <div class="member-title">Founder & CEO</div>
                     </div>
                     <div class="team-member">
-                        <div style="width: 120px; height: 120px; margin: 0 auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%;"></div>
+                        <div class="team-member-avatar" style="background: linear-gradient(135deg, #2ecc71 0%, #27ae60 100%);">FS</div>
                         <div class="member-name">Farhaan Shaikh</div>
                         <div class="member-title">Co-Founder</div>
                     </div>
@@ -564,11 +600,11 @@
 
     <script>
         // Property Type to Image Mapping
-        const propertyTypeColors = {
-            'Retail Shop': '#FF6B6B',
-            'Office Space': '#4ECDC4',
-            'F&B/Restaurant': '#F7B731',
-            'Showroom': '#9B59B6'
+        const propertyTypeImages = {
+            'Retail Shop': 'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 1200 800%27%3E%3Crect fill=%27%23f5f5f5%27 width=%271200%27 height=%27800%27/%3E%3Ctext x=%27600%27 y=%27400%27 text-anchor=%27middle%27 font-size=%2748%27 fill=%27%23999%27%3ERETAIL SHOP IMAGE%3C/text%3E%3C/svg%3E")',
+            'Office Space': 'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 1200 800%27%3E%3Crect fill=%27%23e8e8e8%27 width=%271200%27 height=%27800%27/%3E%3Ctext x=%27600%27 y=%27400%27 text-anchor=%27middle%27 font-size=%2748%27 fill=%27%23999%27%3EOFFICE SPACE IMAGE%3C/text%3E%3C/svg%3E")',
+            'F&B/Restaurant': 'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 1200 800%27%3E%3Crect fill=%27%23ede8e3%27 width=%271200%27 height=%27800%27/%3E%3Ctext x=%27600%27 y=%27400%27 text-anchor=%27middle%27 font-size=%2748%27 fill=%27%23999%27%3EF%26B/RESTAURANT IMAGE%3C/text%3E%3C/svg%3E")',
+            'Showroom': 'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 1200 800%27%3E%3Crect fill=%27%23ddd%27 width=%271200%27 height=%27800%27/%3E%3Ctext x=%27600%27 y=%27400%27 text-anchor=%27middle%27 font-size=%2748%27 fill=%27%23999%27%3ESHOWROOM IMAGE%3C/text%3E%3C/svg%3E")'
         };
 
         // INVENTORY DATA - Central source of truth
@@ -710,7 +746,7 @@
             const grid = document.getElementById('propertyGrid');
 
             grid.innerHTML = filtered.map(p => `
-                <div class="property-card" style="border-left: 5px solid ${propertyTypeColors[p.type] || '#999'};" onclick="openModal('${p.title.replace(/'/g, "\\'")}', '${p.desc.replace(/'/g, "\\'")}', '${p.price}', '${p.size}', '${p.sourcing}')">
+                <div class="property-card" onclick="openModal('${p.title.replace(/'/g, "\\'")}', '${p.desc.replace(/'/g, "\\'")}', '${p.price}', '${p.size}', '${p.sourcing}')">
                     <div class="property-image" style="background-image: ${propertyTypeImages[p.type] || 'linear-gradient(135deg, #34495e 0%, #404e5c 100%)'}">
                         <span class="sourcing-badge ${p.sourcing.toLowerCase()}">${p.sourcing.toUpperCase()}</span>
                     </div>
