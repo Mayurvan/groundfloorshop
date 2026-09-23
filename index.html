@@ -174,14 +174,24 @@
         }
         .property-image {
             height: 220px;
-            background: linear-gradient(135deg, #34495e 0%, #404e5c 100%);
+            background-size: cover;
+            background-position: center;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: flex-end;
+            justify-content: flex-start;
             color: white;
             font-size: 14px;
             position: relative;
             overflow: hidden;
+        }
+        .property-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
         }
         .sourcing-badge {
             position: absolute;
@@ -193,6 +203,7 @@
             font-weight: 600;
             background: white;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 2;
         }
         .direct { color: #27ae60; }
         .indirect { color: #e67e22; }
@@ -497,6 +508,14 @@
     </div>
 
     <script>
+        // Property Type to Image Mapping
+        const propertyTypeImages = {
+            'Retail Shop': 'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 1200 800%27%3E%3Crect fill=%27%23f5f5f5%27 width=%271200%27 height=%27800%27/%3E%3Ctext x=%27600%27 y=%27400%27 text-anchor=%27middle%27 font-size=%2748%27 fill=%27%23999%27%3ERETAIL SHOP IMAGE%3C/text%3E%3C/svg%3E")',
+            'Office Space': 'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 1200 800%27%3E%3Crect fill=%27%23e8e8e8%27 width=%271200%27 height=%27800%27/%3E%3Ctext x=%27600%27 y=%27400%27 text-anchor=%27middle%27 font-size=%2748%27 fill=%27%23999%27%3EOFFICE SPACE IMAGE%3C/text%3E%3C/svg%3E")',
+            'F&B/Restaurant': 'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 1200 800%27%3E%3Crect fill=%27%23ede8e3%27 width=%271200%27 height=%27800%27/%3E%3Ctext x=%27600%27 y=%27400%27 text-anchor=%27middle%27 font-size=%2748%27 fill=%27%23999%27%3EF%26B/RESTAURANT IMAGE%3C/text%3E%3C/svg%3E")',
+            'Showroom': 'url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 1200 800%27%3E%3Crect fill=%27%23ddd%27 width=%271200%27 height=%27800%27/%3E%3Ctext x=%27600%27 y=%27400%27 text-anchor=%27middle%27 font-size=%2748%27 fill=%27%23999%27%3ESHOWROOM IMAGE%3C/text%3E%3C/svg%3E")'
+        };
+
         // INVENTORY DATA - Central source of truth
         const inventory = [
             { id: 1, location: 'Bandra West', type: 'Retail Shop', price: '75L', size: '800', transaction: 'Sale', sourcing: 'Direct', title: 'Premium Retail Shop - Bandra West', desc: 'Ground floor retail space in prime Bandra location. High foot traffic, excellent for fashion/F&B.' },
@@ -527,7 +546,6 @@
 
         // Build filter options dynamically from inventory
         function buildFilters() {
-            // Locations
             const locations = [...new Set(inventory.map(p => p.location))].sort();
             const locationSelect = document.getElementById('location');
             locations.forEach(loc => {
@@ -537,7 +555,6 @@
                 locationSelect.appendChild(opt);
             });
 
-            // Types
             const types = [...new Set(inventory.map(p => p.type))].sort();
             const typeSelect = document.getElementById('type');
             types.forEach(type => {
@@ -547,7 +564,6 @@
                 typeSelect.appendChild(opt);
             });
 
-            // Price ranges
             const priceRanges = ['Below 75L', '75L-1Cr', '1Cr-2Cr', '2Cr+'];
             const priceSelect = document.getElementById('priceRange');
             priceRanges.forEach(range => {
@@ -557,7 +573,6 @@
                 priceSelect.appendChild(opt);
             });
 
-            // Size ranges
             const sizeRanges = ['0-500', '500-1000', '1000-2000', '2000+'];
             const sizeSelect = document.getElementById('sizeRange');
             sizeRanges.forEach(range => {
@@ -567,7 +582,6 @@
                 sizeSelect.appendChild(opt);
             });
 
-            // Transaction types
             const transactions = [...new Set(inventory.map(p => p.transaction))].sort();
             const transSelect = document.getElementById('transaction');
             transactions.forEach(trans => {
@@ -577,7 +591,6 @@
                 transSelect.appendChild(opt);
             });
 
-            // Sourcing types
             const sourcings = [...new Set(inventory.map(p => p.sourcing))].sort();
             const sourcingSelect = document.getElementById('sourcing');
             sourcings.forEach(src => {
@@ -640,14 +653,10 @@
 
             const filtered = inventory.filter(p => matchesFilter(p, filters));
             const grid = document.getElementById('propertyGrid');
-            
+
             grid.innerHTML = filtered.map(p => `
                 <div class="property-card" onclick="openModal('${p.title.replace(/'/g, "\\'")}', '${p.desc.replace(/'/g, "\\'")}', '${p.price}', '${p.size}', '${p.sourcing}')">
-                    <div class="property-image">
-                        <div style="text-align: center;">
-                            <div style="font-size: 48px; margin-bottom: 10px;">🏢</div>
-                            <div>${p.location.toUpperCase()} | ${p.type.toUpperCase()}</div>
-                        </div>
+                    <div class="property-image" style="background-image: ${propertyTypeImages[p.type] || 'linear-gradient(135deg, #34495e 0%, #404e5c 100%)'}">
                         <span class="sourcing-badge ${p.sourcing.toLowerCase()}">${p.sourcing.toUpperCase()}</span>
                     </div>
                     <div class="property-info">
@@ -662,7 +671,7 @@
                     </div>
                 </div>
             `).join('');
-            
+
             document.getElementById('resultCount').textContent = `Showing ${filtered.length} of ${inventory.length} properties`;
         }
 
