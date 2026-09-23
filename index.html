@@ -106,6 +106,7 @@
             font-weight: 600;
             margin-bottom: 8px;
             color: #1a1a2e;
+            font-size: 14px;
         }
         select, input {
             width: 100%;
@@ -113,6 +114,8 @@
             border: 1px solid #ddd;
             border-radius: 4px;
             font-size: 14px;
+            background: white;
+            cursor: pointer;
         }
         .properties-section {
             margin-bottom: 60px;
@@ -309,6 +312,11 @@
             text-align: center;
         }
         footer p { margin-bottom: 10px; }
+        .result-count {
+            margin-bottom: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
         @media (max-width: 768px) {
             h1 { font-size: 32px; }
             .hero { padding: 40px 20px; }
@@ -317,11 +325,6 @@
             .properties-grid { grid-template-columns: 1fr; }
             nav a { margin-left: 15px; font-size: 12px; }
             h2 { font-size: 24px; }
-        }
-        .result-count {
-            margin-bottom: 20px;
-            color: #7f8c8d;
-            font-size: 14px;
         }
     </style>
 </head>
@@ -353,58 +356,36 @@
                     <label for="location">Location</label>
                     <select id="location">
                         <option value="">All Locations</option>
-                        <option value="bandra">Bandra West</option>
-                        <option value="andheri">Andheri West</option>
-                        <option value="santacruz">Santacruz West</option>
-                        <option value="khar">Khar West</option>
-                        <option value="bkc">BKC</option>
                     </select>
                 </div>
                 <div class="filter-group">
                     <label for="type">Property Type</label>
                     <select id="type">
                         <option value="">All Types</option>
-                        <option value="retail">Retail Shop</option>
-                        <option value="office">Office Space</option>
-                        <option value="food">F&B/Restaurant</option>
-                        <option value="showroom">Showroom</option>
                     </select>
                 </div>
                 <div class="filter-group">
                     <label for="priceRange">Price Range (₹)</label>
                     <select id="priceRange">
                         <option value="">Any Price</option>
-                        <option value="0-50L">Below 50 Lakhs</option>
-                        <option value="50L-1Cr">50 Lakhs - 1 Crore</option>
-                        <option value="1Cr-2Cr">1 - 2 Crore</option>
-                        <option value="2Cr+">Above 2 Crore</option>
                     </select>
                 </div>
                 <div class="filter-group">
                     <label for="sizeRange">Built-up Size (sqft)</label>
                     <select id="sizeRange">
                         <option value="">Any Size</option>
-                        <option value="0-500">0-500</option>
-                        <option value="500-1000">500-1000</option>
-                        <option value="1000-2000">1000-2000</option>
-                        <option value="2000+">2000+</option>
                     </select>
                 </div>
                 <div class="filter-group">
                     <label for="transaction">Transaction Type</label>
                     <select id="transaction">
                         <option value="">All Types</option>
-                        <option value="sale">Sale</option>
-                        <option value="lease">Lease</option>
-                        <option value="both">Both</option>
                     </select>
                 </div>
                 <div class="filter-group">
                     <label for="sourcing">Sourcing Type</label>
                     <select id="sourcing">
                         <option value="">All Sources</option>
-                        <option value="direct">Direct</option>
-                        <option value="indirect">Indirect</option>
                     </select>
                 </div>
             </div>
@@ -460,21 +441,22 @@
     </div>
 
     <script>
-        const properties = [
-            { id: 1, location: 'bandra', type: 'retail', price: '75L', size: '800', transaction: 'sale', sourcing: 'direct', title: 'Premium Retail Shop - Bandra West', desc: 'Ground floor retail space in prime Bandra location. High foot traffic, excellent for fashion/F&B.' },
-            { id: 2, location: 'andheri', type: 'office', price: '1.2Cr', size: '1500', transaction: 'lease', sourcing: 'indirect', title: 'Corporate Office - Andheri West', desc: 'Modern office space with parking. Ideal for startups and established firms.' },
-            { id: 3, location: 'santacruz', type: 'food', price: '1.5Cr', size: '1200', transaction: 'sale', sourcing: 'direct', title: 'F&B Ready Space - Santacruz', desc: 'Licensed F&B space near Milan Subway. Turnkey setup, immediate possession.' },
-            { id: 4, location: 'khar', type: 'showroom', price: '2.2Cr', size: '2000', transaction: 'both', sourcing: 'direct', title: 'Luxury Showroom - Khar West', desc: 'Premium showroom space. Perfect for automotive, watches, jewelry, or fashion brands.' },
-            { id: 5, location: 'bkc', type: 'office', price: '2.5Cr', size: '2500', transaction: 'lease', sourcing: 'indirect', title: 'BKC Corporate Space', desc: 'Grade-A office space in Business District. Modern amenities, 24/7 security.' },
-            { id: 6, location: 'bandra', type: 'retail', price: '1.1Cr', size: '1100', transaction: 'sale', sourcing: 'indirect', title: 'Retail Hub - Bandstand', desc: 'High-visibility street-front property. Excellent for retail and hospitality.' },
-            { id: 7, location: 'andheri', type: 'food', price: '85L', size: '950', transaction: 'lease', sourcing: 'direct', title: 'QSR Space - Andheri', desc: 'Ready-to-operate quick service restaurant space. Full kitchen setup.' },
-            { id: 8, location: 'santacruz', type: 'office', price: '1.8Cr', size: '1800', transaction: 'sale', sourcing: 'direct', title: 'IT Office Hub - Santacruz', desc: 'Spacious office for IT/tech companies. Flexible floor plans available.' },
-            { id: 9, location: 'khar', type: 'retail', price: '95L', size: '900', transaction: 'lease', sourcing: 'indirect', title: 'Boutique Space - Khar', desc: 'Premium boutique for luxury brands. High-end clientele area.' },
-            { id: 10, location: 'bkc', type: 'showroom', price: '3.2Cr', size: '3000', transaction: 'sale', sourcing: 'indirect', title: 'Premium Showroom - BKC', desc: 'Flagship showroom opportunity. Maximum visibility in business hub.' },
-            { id: 11, location: 'bandra', type: 'office', price: '1.4Cr', size: '1400', transaction: 'both', sourcing: 'direct', title: 'Creative Space - Bandra', desc: 'Loft-style office ideal for creative agencies, studios, and startups.' },
-            { id: 12, location: 'andheri', type: 'showroom', price: '1.8Cr', size: '1600', transaction: 'lease', sourcing: 'direct', title: 'Automotive Showroom - Andheri', desc: 'Large ground floor space perfect for car/bike showroom. Easy access.' },
-            { id: 13, location: 'santacruz', type: 'food', price: '1.3Cr', size: '1100', transaction: 'sale', sourcing: 'indirect', title: 'Cloud Kitchen - Santacruz', desc: 'Operational cloud kitchen with delivery infrastructure in place.' },
-            { id: 14, location: 'khar', type: 'office', price: '2.1Cr', size: '2100', transaction: 'lease', sourcing: 'direct', title: 'Executive Office - Khar', desc: 'Premium office with conference rooms and modern facilities.' }
+        // INVENTORY DATA - Central source of truth
+        const inventory = [
+            { id: 1, location: 'Bandra West', type: 'Retail Shop', price: '75L', size: '800', transaction: 'Sale', sourcing: 'Direct', title: 'Premium Retail Shop - Bandra West', desc: 'Ground floor retail space in prime Bandra location. High foot traffic, excellent for fashion/F&B.' },
+            { id: 2, location: 'Andheri West', type: 'Office Space', price: '1.2Cr', size: '1500', transaction: 'Lease', sourcing: 'Indirect', title: 'Corporate Office - Andheri West', desc: 'Modern office space with parking. Ideal for startups and established firms.' },
+            { id: 3, location: 'Santacruz West', type: 'F&B/Restaurant', price: '1.5Cr', size: '1200', transaction: 'Sale', sourcing: 'Direct', title: 'F&B Ready Space - Santacruz', desc: 'Licensed F&B space near Milan Subway. Turnkey setup, immediate possession.' },
+            { id: 4, location: 'Khar West', type: 'Showroom', price: '2.2Cr', size: '2000', transaction: 'Both', sourcing: 'Direct', title: 'Luxury Showroom - Khar West', desc: 'Premium showroom space. Perfect for automotive, watches, jewelry, or fashion brands.' },
+            { id: 5, location: 'BKC', type: 'Office Space', price: '2.5Cr', size: '2500', transaction: 'Lease', sourcing: 'Indirect', title: 'BKC Corporate Space', desc: 'Grade-A office space in Business District. Modern amenities, 24/7 security.' },
+            { id: 6, location: 'Bandra West', type: 'Retail Shop', price: '1.1Cr', size: '1100', transaction: 'Sale', sourcing: 'Indirect', title: 'Retail Hub - Bandstand', desc: 'High-visibility street-front property. Excellent for retail and hospitality.' },
+            { id: 7, location: 'Andheri West', type: 'F&B/Restaurant', price: '85L', size: '950', transaction: 'Lease', sourcing: 'Direct', title: 'QSR Space - Andheri', desc: 'Ready-to-operate quick service restaurant space. Full kitchen setup.' },
+            { id: 8, location: 'Santacruz West', type: 'Office Space', price: '1.8Cr', size: '1800', transaction: 'Sale', sourcing: 'Direct', title: 'IT Office Hub - Santacruz', desc: 'Spacious office for IT/tech companies. Flexible floor plans available.' },
+            { id: 9, location: 'Khar West', type: 'Retail Shop', price: '95L', size: '900', transaction: 'Lease', sourcing: 'Indirect', title: 'Boutique Space - Khar', desc: 'Premium boutique for luxury brands. High-end clientele area.' },
+            { id: 10, location: 'BKC', type: 'Showroom', price: '3.2Cr', size: '3000', transaction: 'Sale', sourcing: 'Indirect', title: 'Premium Showroom - BKC', desc: 'Flagship showroom opportunity. Maximum visibility in business hub.' },
+            { id: 11, location: 'Bandra West', type: 'Office Space', price: '1.4Cr', size: '1400', transaction: 'Both', sourcing: 'Direct', title: 'Creative Space - Bandra', desc: 'Loft-style office ideal for creative agencies, studios, and startups.' },
+            { id: 12, location: 'Andheri West', type: 'Showroom', price: '1.8Cr', size: '1600', transaction: 'Lease', sourcing: 'Direct', title: 'Automotive Showroom - Andheri', desc: 'Large ground floor space perfect for car/bike showroom. Easy access.' },
+            { id: 13, location: 'Santacruz West', type: 'F&B/Restaurant', price: '1.3Cr', size: '1100', transaction: 'Sale', sourcing: 'Indirect', title: 'Cloud Kitchen - Santacruz', desc: 'Operational cloud kitchen with delivery infrastructure in place.' },
+            { id: 14, location: 'Khar West', type: 'Office Space', price: '2.1Cr', size: '2100', transaction: 'Lease', sourcing: 'Direct', title: 'Executive Office - Khar', desc: 'Premium office with conference rooms and modern facilities.' }
         ];
 
         const blogs = [
@@ -487,16 +469,130 @@
             { title: 'Smart Property Management: Maximizing Rental Returns', excerpt: 'Best practices for maintaining, marketing, and managing commercial properties profitably...' }
         ];
 
+        // Build filter options dynamically from inventory
+        function buildFilters() {
+            // Locations
+            const locations = [...new Set(inventory.map(p => p.location))].sort();
+            const locationSelect = document.getElementById('location');
+            locations.forEach(loc => {
+                const opt = document.createElement('option');
+                opt.value = loc;
+                opt.textContent = loc;
+                locationSelect.appendChild(opt);
+            });
+
+            // Types
+            const types = [...new Set(inventory.map(p => p.type))].sort();
+            const typeSelect = document.getElementById('type');
+            types.forEach(type => {
+                const opt = document.createElement('option');
+                opt.value = type;
+                opt.textContent = type;
+                typeSelect.appendChild(opt);
+            });
+
+            // Price ranges
+            const priceRanges = ['Below 75L', '75L-1Cr', '1Cr-2Cr', '2Cr+'];
+            const priceSelect = document.getElementById('priceRange');
+            priceRanges.forEach(range => {
+                const opt = document.createElement('option');
+                opt.value = range;
+                opt.textContent = '₹ ' + range;
+                priceSelect.appendChild(opt);
+            });
+
+            // Size ranges
+            const sizeRanges = ['0-500', '500-1000', '1000-2000', '2000+'];
+            const sizeSelect = document.getElementById('sizeRange');
+            sizeRanges.forEach(range => {
+                const opt = document.createElement('option');
+                opt.value = range;
+                opt.textContent = range + ' sqft';
+                sizeSelect.appendChild(opt);
+            });
+
+            // Transaction types
+            const transactions = [...new Set(inventory.map(p => p.transaction))].sort();
+            const transSelect = document.getElementById('transaction');
+            transactions.forEach(trans => {
+                const opt = document.createElement('option');
+                opt.value = trans;
+                opt.textContent = trans;
+                transSelect.appendChild(opt);
+            });
+
+            // Sourcing types
+            const sourcings = [...new Set(inventory.map(p => p.sourcing))].sort();
+            const sourcingSelect = document.getElementById('sourcing');
+            sourcings.forEach(src => {
+                const opt = document.createElement('option');
+                opt.value = src;
+                opt.textContent = src;
+                sourcingSelect.appendChild(opt);
+            });
+        }
+
+        function parsePrice(price) {
+            const match = price.match(/(\d+(?:\.\d+)?)(L|Cr)/);
+            if (!match) return 0;
+            const num = parseFloat(match[1]);
+            return match[2] === 'Cr' ? num * 10000000 : num * 100000;
+        }
+
+        function matchesFilter(property, filters) {
+            if (filters.location && property.location !== filters.location) return false;
+            if (filters.type && property.type !== filters.type) return false;
+            if (filters.transaction && property.transaction !== filters.transaction) return false;
+            if (filters.sourcing && property.sourcing !== filters.sourcing) return false;
+
+            if (filters.priceRange) {
+                const price = parsePrice(property.price);
+                const ranges = {
+                    'Below 75L': [0, 7500000],
+                    '75L-1Cr': [7500000, 10000000],
+                    '1Cr-2Cr': [10000000, 20000000],
+                    '2Cr+': [20000000, Infinity]
+                };
+                const range = ranges[filters.priceRange];
+                if (!range || price < range[0] || price > range[1]) return false;
+            }
+
+            if (filters.sizeRange) {
+                const size = parseInt(property.size);
+                const ranges = {
+                    '0-500': [0, 500],
+                    '500-1000': [500, 1000],
+                    '1000-2000': [1000, 2000],
+                    '2000+': [2000, Infinity]
+                };
+                const range = ranges[filters.sizeRange];
+                if (!range || size < range[0] || size > range[1]) return false;
+            }
+
+            return true;
+        }
+
         function renderProperties() {
+            const filters = {
+                location: document.getElementById('location').value,
+                type: document.getElementById('type').value,
+                priceRange: document.getElementById('priceRange').value,
+                sizeRange: document.getElementById('sizeRange').value,
+                transaction: document.getElementById('transaction').value,
+                sourcing: document.getElementById('sourcing').value
+            };
+
+            const filtered = inventory.filter(p => matchesFilter(p, filters));
             const grid = document.getElementById('propertyGrid');
-            grid.innerHTML = properties.map(p => `
-                <div class="property-card" onclick="openModal('${p.title}', '${p.desc}', '${p.price}', '${p.size}', '${p.sourcing}')">
+            
+            grid.innerHTML = filtered.map(p => `
+                <div class="property-card" onclick="openModal('${p.title.replace(/'/g, "\\'")}', '${p.desc.replace(/'/g, "\\'")}', '${p.price}', '${p.size}', '${p.sourcing}')">
                     <div class="property-image">
                         <div style="text-align: center;">
                             <div style="font-size: 48px; margin-bottom: 10px;">🏢</div>
                             <div>${p.location.toUpperCase()} | ${p.type.toUpperCase()}</div>
                         </div>
-                        <span class="sourcing-badge ${p.sourcing}">${p.sourcing.toUpperCase()}</span>
+                        <span class="sourcing-badge ${p.sourcing.toLowerCase()}">${p.sourcing.toUpperCase()}</span>
                     </div>
                     <div class="property-info">
                         <div class="property-title">${p.title}</div>
@@ -510,7 +606,8 @@
                     </div>
                 </div>
             `).join('');
-            document.getElementById('resultCount').textContent = `Showing ${properties.length} properties`;
+            
+            document.getElementById('resultCount').textContent = `Showing ${filtered.length} of ${inventory.length} properties`;
         }
 
         function renderBlog() {
@@ -532,7 +629,7 @@
                 <h3>${title}</h3>
                 <p><strong>Price:</strong> ₹${price}</p>
                 <p><strong>Built-up Size:</strong> ${size} sqft</p>
-                <p><strong>Sourcing:</strong> <span class="${sourcing}">${sourcing.toUpperCase()}</span></p>
+                <p><strong>Sourcing:</strong> <span class="${sourcing.toLowerCase()}">${sourcing.toUpperCase()}</span></p>
                 <p><strong>Description:</strong></p>
                 <p>${desc}</p>
                 <p style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
@@ -549,6 +646,8 @@
             if (e.target === document.getElementById('modal')) document.getElementById('modal').style.display = 'none';
         };
 
+        // Initialize
+        buildFilters();
         renderProperties();
         renderBlog();
 
@@ -568,8 +667,7 @@
         "description": "Premium ground floor commercial real estate marketplace in Mumbai",
         "areaServed": {
             "@type": "City",
-            "name": "Mumbai",
-            "url": "https://en.wikipedia.org/wiki/Mumbai"
+            "name": "Mumbai"
         }
     }
     </script>
