@@ -3,1383 +3,558 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ground Floor Shop - Mumbai's premier ground-floor commercial real estate marketplace. Direct connections, transparent pricing, fast execution. 500+ verified transactions across Bandra, Santacruz, Andheri, BKC, Chandivali.">
-    <meta name="keywords" content="ground floor commercial, commercial real estate Mumbai, commercial property lease Mumbai, shop space Mumbai, retail space Bandra, commercial property Santacruz, Andheri commercial space, BKC property, commercial real estate, commercial leasing">
-    <meta name="author" content="UberPod Realty">
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-    <meta name="googlebot" content="index, follow">
-    <meta name="language" content="en-US">
-    <meta name="revisit-after" content="7 days">
-    <meta property="og:title" content="Ground Floor Shop | Commercial Real Estate Marketplace in Mumbai">
-    <meta property="og:description" content="Find verified ground-floor commercial space across Mumbai. Direct landlord connections, transparent pricing, fast execution. 500+ verified transactions.">
+    <meta name="description" content="Ground Floor Shop - Premium ground floor commercial real estate marketplace in Mumbai. Find retail shops, offices, and commercial spaces with transparent pricing, fast execution, and zero hidden fees. Verified landlords and investors.">
+    <meta name="keywords" content="ground floor shop mumbai, commercial real estate, retail space, office space, commercial property, mumbai shops, tenant representation, property marketplace">
+    <meta name="author" content="Ground Floor Shop">
+    <meta name="robots" content="index, follow">
     <meta property="og:type" content="website">
+    <meta property="og:title" content="Ground Floor Shop - Premium Commercial Real Estate Marketplace">
+    <meta property="og:description" content="Find verified ground floor commercial spaces in Mumbai. Transparent pricing, zero hidden fees, fast execution.">
     <meta property="og:url" content="https://groundfloorshop.com">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1758448500766-fdbb9f0925bc?w=1200&h=630&fit=crop">
-    <meta property="og:site_name" content="Ground Floor Shop">
+    <meta property="og:image" content="https://groundfloorshop.com/og-image.jpg">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Ground Floor Shop | Commercial Real Estate Marketplace">
-    <meta name="twitter:description" content="500+ verified ground-floor commercial properties across Mumbai. Direct connections, transparent pricing.">
-    <meta name="twitter:image" content="https://images.unsplash.com/photo-1758448500766-fdbb9f0925bc?w=1200&h=630&fit=crop">
+    <meta name="twitter:title" content="Ground Floor Shop - Commercial Real Estate">
+    <meta name="twitter:description" content="Premium ground floor marketplace for Mumbai commercial properties">
     <link rel="canonical" href="https://groundfloorshop.com">
-    <title>Ground Floor Shop | Commercial Real Estate Marketplace</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23f5f3ef'/%3E%3Ctext x='50' y='60' font-family='Cinzel, serif' font-size='45' font-weight='800' fill='%238B7355' text-anchor='middle'%3EGF%3C/text%3E%3C/svg%3E" />
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75' font-family='serif' font-weight='bold'>G</text></svg>">
+    <title>Ground Floor Shop | Premium Commercial Real Estate in Mumbai</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --primary-text: #1a1a1a;
-            --secondary-text: #666666;
-            --muted-text: #999999;
-            --accent-gold: #8B7355;
-            --light-bg: #f5f3ef;
-            --white: #ffffff;
-            --border: #e5e5e5;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
-        body {
-            font-family: 'Inter', sans-serif;
-            color: var(--primary-text);
-            background: var(--white);
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
             line-height: 1.6;
-            overflow-x: hidden;
+            color: #2c3e50;
+            background-color: #f8f9fa;
         }
-
-        h1, h2, h3, h4, h5 {
-            font-family: 'Cinzel', serif;
+        header {
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            color: white;
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 0;
+        }
+        .logo { font-size: 28px; font-weight: 700; letter-spacing: 1px; }
+        nav a { 
+            color: white;
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        nav a:hover { color: #ffd700; }
+        .hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
             font-weight: 700;
             line-height: 1.2;
         }
-
-        h1 {
-            font-size: 3.5rem;
-            color: var(--primary-text);
-            margin-bottom: 1.5rem;
-            font-weight: 800;
-            letter-spacing: -1.5px;
-        }
-
-        h2 {
-            font-size: 2.75rem;
-            color: var(--primary-text);
-            margin-bottom: 1.5rem;
-            font-weight: 800;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            color: var(--primary-text);
-            margin-bottom: 1rem;
-        }
-
-        p {
-            font-size: 1rem;
-            color: var(--secondary-text);
-            line-height: 1.8;
-            margin-bottom: 1rem;
-        }
-
-        a {
-            text-decoration: none;
-            color: var(--accent-gold);
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: var(--primary-text);
-        }
-
-        button {
-            font-family: 'Inter', sans-serif;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            border: none;
-            border-radius: 6px;
-            font-weight: 600;
-            padding: 14px 32px;
-            font-size: 1rem;
-            letter-spacing: 0.3px;
-        }
-
-        .btn-primary {
-            background: var(--accent-gold);
-            color: var(--white);
-        }
-
-        .btn-primary:hover {
-            background: #6d5742;
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(139, 115, 85, 0.15);
-        }
-
-        .btn-secondary {
-            background: var(--white);
-            color: var(--primary-text);
-            border: 2px solid var(--primary-text);
-        }
-
-        .btn-secondary:hover {
-            background: var(--light-bg);
-            border-color: var(--accent-gold);
-            color: var(--accent-gold);
-        }
-
-        /* Header */
-        header {
-            background: var(--white);
-            border-bottom: 1px solid var(--border);
-            padding: 1.5rem 0;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .header-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-size: 1.75rem;
-            font-weight: 800;
-            color: var(--primary-text);
-            font-family: 'Cinzel', serif;
-            letter-spacing: -0.5px;
-        }
-
-        .logo-accent {
-            color: var(--accent-gold);
-        }
-
-        nav {
-            display: flex;
-            gap: 3rem;
-            align-items: center;
-        }
-
-        nav a {
-            color: var(--primary-text);
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        nav a:hover {
-            color: var(--accent-gold);
-        }
-
-        nav a.active {
-            color: var(--accent-gold);
-            font-weight: 600;
-        }
-
-        nav a.active::after {
-            content: '';
-            position: absolute;
-            bottom: -8px;
-            left: 0;
-            right: 0;
-            height: 2px;
-            background: var(--accent-gold);
-        }
-
-        .btn-header {
-            padding: 10px 24px;
-            font-size: 0.9rem;
-        }
-
-        /* Hamburger Menu */
-        .hamburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-            gap: 6px;
-            background: none;
-            border: none;
-            padding: 0;
-        }
-
-        .hamburger span {
-            width: 24px;
-            height: 2.5px;
-            background: var(--primary-text);
-            border-radius: 2px;
-            transition: all 0.3s ease;
-        }
-
-        .hamburger.active span:nth-child(1) {
-            transform: rotate(45deg) translate(10px, 10px);
-        }
-
-        .hamburger.active span:nth-child(2) {
-            opacity: 0;
-        }
-
-        .hamburger.active span:nth-child(3) {
-            transform: rotate(-45deg) translate(7px, -7px);
-        }
-
-        .mobile-menu {
-            display: none;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            background: var(--white);
-            border-bottom: 1px solid var(--border);
-            padding: 1.5rem;
-            flex-direction: column;
-            gap: 1rem;
-            z-index: 999;
-        }
-
-        .mobile-menu.active {
-            display: flex;
-        }
-
-        .mobile-menu a {
-            color: var(--primary-text);
-            font-weight: 500;
-            padding: 0.75rem 0;
-            border-bottom: 1px solid var(--light-bg);
-        }
-
-        .mobile-menu a:last-child {
-            border-bottom: none;
-        }
-
-        .mobile-menu .btn-primary {
-            width: 100%;
-            margin-top: 0.5rem;
-        }
-
-        /* Hero Section */
-        .hero {
-            position: relative;
-            overflow: hidden;
-            background: var(--white);
-        }
-
-        .hero-image {
-            width: 100%;
-            height: 500px;
-            background: linear-gradient(135deg, var(--light-bg) 0%, #f0ebe3 100%);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--muted-text);
-            font-size: 1.1rem;
-            font-style: italic;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .hero-image.loaded {
-            background-size: cover;
-            background-position: center;
-        }
-
-        .hero-overlay {
-            position: absolute;
-            inset: 0;
-            background: rgba(255, 255, 255, 0.7);
-        }
-
-        .hero-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 5rem 2rem;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero h1 {
-            max-width: 800px;
-            margin-bottom: 1.5rem;
-        }
-
         .hero p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            font-weight: 300;
             max-width: 700px;
-            font-size: 1.1rem;
-            margin-bottom: 2.5rem;
-            line-height: 1.8;
+            margin-left: auto;
+            margin-right: auto;
         }
-
-        .hero-cta {
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            margin-bottom: 4rem;
+        .cta-primary {
+            background: #ffd700;
+            color: #1a1a2e;
+            padding: 14px 40px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
         }
-
-        .hero-stats {
+        .cta-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+        }
+        .filters {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin-bottom: 40px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .filter-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 3rem;
-            padding-top: 2rem;
-            border-top: 1px solid var(--border);
+            gap: 15px;
         }
-
-        .stat-item {
-            text-align: left;
+        .filter-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1a1a2e;
         }
-
-        .stat-number {
-            font-size: 2.5rem;
-            font-weight: 800;
-            color: var(--accent-gold);
-            font-family: 'Cinzel', serif;
-            margin-bottom: 0.5rem;
+        select, input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 14px;
         }
-
-        .stat-label {
-            font-size: 0.9rem;
-            color: var(--secondary-text);
-            font-weight: 500;
-        }
-
-        /* Main Content */
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 2rem;
-        }
-
-        /* Property Grid Section */
         .properties-section {
-            padding: 5rem 0;
-            border-top: 1px solid var(--border);
-            display: none;
+            margin-bottom: 60px;
         }
-
-        .section-header {
-            margin-bottom: 3rem;
+        h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #1a1a2e;
+            font-weight: 700;
         }
-
-        .section-header h2 {
-            margin-bottom: 0.5rem;
-        }
-
-        .section-subtitle {
-            color: var(--secondary-text);
-            font-size: 1.05rem;
-        }
-
-        .property-grid {
+        .properties-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 25px;
+            margin-bottom: 40px;
         }
-
         .property-card {
-            background: var(--white);
-            border: 1px solid var(--border);
+            background: white;
             border-radius: 8px;
             overflow: hidden;
-            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            cursor: pointer;
         }
-
         .property-card:hover {
-            border-color: var(--accent-gold);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
-
-        .property-badge {
-            display: inline-block;
-            margin-bottom: 1rem;
-            background: var(--accent-gold);
-            color: var(--white);
-            padding: 6px 12px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-        }
-
-        .property-content {
-            padding: 1.75rem;
-        }
-
-        .property-type {
-            font-size: 0.8rem;
-            color: var(--accent-gold);
-            text-transform: uppercase;
-            font-weight: 700;
-            letter-spacing: 1px;
-            margin-bottom: 0.5rem;
-        }
-
-        .property-title {
-            font-size: 1.3rem;
-            font-weight: 700;
-            color: var(--primary-text);
-            margin-bottom: 0.5rem;
-            font-family: 'Cinzel', serif;
-        }
-
-        .property-location {
-            color: var(--secondary-text);
-            font-size: 0.9rem;
-            margin-bottom: 1rem;
-        }
-
-        .property-details {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            padding: 1rem 0;
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-            margin-bottom: 1.25rem;
-        }
-
-        .detail-item {
-            text-align: center;
-        }
-
-        .detail-value {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--accent-gold);
-            font-family: 'Cinzel', serif;
-        }
-
-        .detail-label {
-            font-size: 0.75rem;
-            color: var(--secondary-text);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-top: 0.25rem;
-        }
-
-        .property-cta {
-            width: 100%;
-            background: var(--accent-gold);
-            color: var(--white);
-            padding: 12px 16px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-align: center;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            border: none;
-        }
-
-        .property-cta:hover {
-            background: #6d5742;
-            transform: translateY(-2px);
-        }
-
-        /* Location Filter Bar */
-        .location-filter-bar {
+        .property-image {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             display: flex;
-            gap: 0.75rem;
-            margin-bottom: 3rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .filter-btn {
-            padding: 10px 18px;
-            border: 1.5px solid var(--border);
-            background: var(--white);
-            color: var(--primary-text);
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .filter-btn:hover {
-            border-color: var(--accent-gold);
-            color: var(--accent-gold);
-        }
-
-        .filter-btn.active {
-            background: var(--accent-gold);
-            color: var(--white);
-            border-color: var(--accent-gold);
-        }
-
-        /* Compact Property Grid - 3 columns */
-        .property-grid-compact {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 1.5rem;
-            margin-bottom: 2rem;
-        }
-
-        .property-card-compact {
-            background: var(--white);
-            border: 1.5px solid var(--border);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            cursor: pointer;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .property-card-compact:hover {
-            border-color: var(--accent-gold);
-            box-shadow: 0 8px 20px rgba(139, 115, 85, 0.12);
-            transform: translateY(-4px);
-        }
-
-        .card-header-compact {
-            padding: 1rem;
-            background: var(--light-bg);
-            display: flex;
-            gap: 0.5rem;
-            flex-wrap: wrap;
             align-items: center;
-        }
-
-        .location-tag {
-            display: inline-block;
-            background: var(--accent-gold);
-            color: var(--white);
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.3px;
-            text-transform: uppercase;
-        }
-
-        .type-tag {
-            display: inline-block;
-            background: transparent;
-            color: var(--accent-gold);
-            padding: 4px 10px;
-            border: 1px solid var(--accent-gold);
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-        }
-
-        .card-body-compact {
-            padding: 1.25rem;
-            flex-grow: 1;
-        }
-
-        .card-body-compact h4 {
-            font-family: 'Cinzel', serif;
-            font-size: 1.1rem;
-            font-weight: 700;
-            color: var(--primary-text);
-            margin-bottom: 0.5rem;
-            line-height: 1.3;
-        }
-
-        .location-detail {
-            font-size: 0.85rem;
-            color: var(--secondary-text);
-            margin-bottom: 0.75rem;
-        }
-
-        .price-row {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem;
-            margin-bottom: 0.75rem;
-            padding-bottom: 0.75rem;
-            border-bottom: 1px solid var(--border);
-        }
-
-        .price-item {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .price-item .label {
-            font-size: 0.75rem;
-            color: var(--secondary-text);
-            text-transform: uppercase;
-            font-weight: 600;
-            letter-spacing: 0.3px;
-            margin-bottom: 0.25rem;
-        }
-
-        .price-item .value {
-            font-size: 1rem;
-            font-weight: 700;
-            color: var(--accent-gold);
-            font-family: 'Cinzel', serif;
-        }
-
-        .property-detail {
-            font-size: 0.85rem;
-            color: var(--secondary-text);
-            line-height: 1.5;
-            margin: 0;
-        }
-
-        .btn-view-details {
-            margin: 1rem;
-            padding: 10px 16px;
-            background: var(--accent-gold);
-            color: var(--white);
-            border: none;
-            border-radius: 6px;
-            font-weight: 600;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-        }
-
-        .btn-view-details:hover {
-            background: #6d5742;
-            transform: translateY(-2px);
-        }
-
-        /* Property Modal */
-        .property-modal {
-            display: none;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0.5);
-            z-index: 2000;
-            padding: 2rem;
-            overflow-y: auto;
-        }
-
-        .property-modal.active {
-            display: flex;
-            align-items: flex-start;
             justify-content: center;
-            padding-top: 4rem;
-        }
-
-        .modal-content {
-            background: var(--white);
-            border-radius: 12px;
-            padding: 3rem;
-            max-width: 700px;
-            width: 100%;
-            position: relative;
-            animation: slideUp 0.3s ease;
-        }
-
-        @keyframes slideUp {
-            from {
-                opacity: 0;
-                transform: translateY(30px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .modal-close {
-            position: absolute;
-            top: 1.5rem;
-            right: 1.5rem;
-            background: var(--light-bg);
-            border: none;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            cursor: pointer;
-            font-size: 1.5rem;
-            color: var(--primary-text);
-            transition: all 0.3s ease;
-        }
-
-        .modal-close:hover {
-            background: var(--accent-gold);
-            color: var(--white);
-        }
-
-        .full-property h3 {
-            color: var(--primary-text);
-            margin-bottom: 1.5rem;
-            font-size: 1.5rem;
-        }
-
-        .full-property p {
-            margin-bottom: 1rem;
-            line-height: 1.8;
-            color: var(--secondary-text);
-        }
-
-        .full-property strong {
-            color: var(--primary-text);
-        }
-
-        /* Responsive - Tablet */
-        @media (max-width: 1024px) {
-            .property-grid-compact {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .location-filter-bar {
-                justify-content: flex-start;
-                overflow-x: auto;
-                padding-bottom: 0.5rem;
-            }
-        }
-
-        /* Responsive - Mobile */
-        @media (max-width: 768px) {
-            .property-grid-compact {
-                grid-template-columns: 1fr;
-            }
-
-            .location-filter-bar {
-                flex-wrap: wrap;
-                gap: 0.5rem;
-            }
-
-            .filter-btn {
-                padding: 8px 14px;
-                font-size: 0.85rem;
-            }
-
-            .modal-content {
-                padding: 2rem;
-                max-width: 90vw;
-            }
-
-            .card-body-compact {
-                padding: 1rem;
-            }
-
-            .btn-view-details {
-                margin: 0.75rem;
-            }
-        }
-
-        /* Why Choose Section */
-        .why-section {
-            padding: 5rem 0;
-            background: var(--light-bg);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-top: 3rem;
-        }
-
-        .why-item {
-            text-align: center;
-        }
-
-        .why-icon {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .why-item h3 {
-            margin-bottom: 0.75rem;
-        }
-
-        .why-item p {
-            font-size: 0.95rem;
-            color: var(--secondary-text);
-        }
-
-        /* CTA Section */
-        .cta-section {
-            padding: 4rem 2rem;
-            text-align: center;
-            background: var(--white);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .cta-section h2 {
-            margin-bottom: 1rem;
-        }
-
-        .cta-section p {
-            font-size: 1.05rem;
-            max-width: 600px;
-            margin: 0 auto 2.5rem;
-        }
-
-        .cta-buttons {
-            display: flex;
-            gap: 1.5rem;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        /* Form Section */
-        .form-section {
-            padding: 4rem 2rem;
-            background: var(--white);
-            display: none;
-        }
-
-        /* Legal Sections */
-        .legal-section {
-            padding: 4rem 2rem;
-            background: var(--white);
-            min-height: 100vh;
-            line-height: 1.8;
-        }
-
-        .legal-section h3 {
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary-text);
-        }
-
-        .legal-section ul {
-            list-style-type: disc;
-        }
-
-        .legal-section ul li {
-            margin-bottom: 0.5rem;
-        }
-
-        /* Content Sections (About, Team, Blog, Contact) */
-        .content-section {
-            padding: 4rem 2rem;
-            background: var(--white);
-            min-height: 100vh;
-            line-height: 1.8;
-        }
-
-        .content-section h3 {
-            margin-top: 2rem;
-            margin-bottom: 1rem;
-            color: var(--primary-text);
-        }
-
-        .content-section ul {
-            list-style-type: disc;
-            margin-left: 2rem;
-        }
-
-        .content-section ul li {
-            margin-bottom: 0.8rem;
-        }
-
-        .form-section.active {
-            display: block;
-            animation: fadeIn 0.4s ease;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
-        }
-
-        .form-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .form-container h2 {
-            margin-bottom: 0.5rem;
-        }
-
-        .form-subtitle {
-            color: var(--secondary-text);
-            margin-bottom: 2rem;
-        }
-
-        form {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-        }
-
-        .form-group {
-            display: flex;
-            flex-direction: column;
-        }
-
-        .form-group label {
-            color: var(--primary-text);
-            font-weight: 600;
-            margin-bottom: 0.5rem;
-            font-size: 0.9rem;
-        }
-
-        .form-group input,
-        .form-group textarea,
-        .form-group select {
-            padding: 12px 14px;
-            background: var(--light-bg);
-            border: 1px solid var(--border);
-            border-radius: 6px;
-            color: var(--primary-text);
-            font-family: 'Inter', sans-serif;
-            font-size: 0.95rem;
-            transition: all 0.3s ease;
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus,
-        .form-group select:focus {
-            outline: none;
-            border-color: var(--accent-gold);
-            background: var(--white);
-            box-shadow: 0 0 0 3px rgba(139, 115, 85, 0.1);
-        }
-
-        .form-submit {
-            grid-column: 1 / -1;
-            padding: 14px 32px;
-            background: var(--accent-gold);
-            color: var(--white);
-            font-weight: 600;
-            border-radius: 6px;
-            cursor: pointer;
-            margin-top: 1rem;
-            transition: all 0.3s ease;
-        }
-
-        .form-submit:hover {
-            background: #6d5742;
-            transform: translateY(-2px);
-        }
-
-        /* Footer */
-        footer {
-            background: var(--primary-text);
-            color: var(--white);
-            padding: 3rem 2rem;
-        }
-
-        .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .footer-col h4 {
-            color: var(--accent-gold);
-            margin-bottom: 1rem;
-            font-weight: 700;
-            font-family: 'Cinzel', serif;
-        }
-
-        .footer-col a,
-        .footer-col p {
-            color: rgba(255, 255, 255, 0.7);
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
-            transition: color 0.3s ease;
-            display: block;
-        }
-
-        .footer-col a:hover {
-            color: var(--accent-gold);
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            text-align: center;
-            color: rgba(255, 255, 255, 0.6);
-            font-size: 0.85rem;
-        }
-
-        /* Property Card Images */
-        .property-card-image {
-            width: 100%;
-            height: 180px;
-            object-fit: cover;
-            background: linear-gradient(135deg, var(--light-bg) 0%, #f0ebe3 100%);
-        }
-
-        /* Location Showcase Section */
-        .location-showcase {
-            padding: 5rem 0;
-            background: var(--white);
-            border-top: 1px solid var(--border);
-            border-bottom: 1px solid var(--border);
-        }
-
-        .location-showcase h2 {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .location-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .location-card {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            height: 320px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-        }
-
-        .location-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 12px 28px rgba(139, 115, 85, 0.15);
-        }
-
-        .location-card img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
-
-        .location-card:hover img {
-            transform: scale(1.05);
-        }
-
-        .location-overlay {
-            position: absolute;
-            inset: 0;
-            background: linear-gradient(to bottom, rgba(0,0,0,0) 40%, rgba(0,0,0,0.6) 100%);
-            display: flex;
-            align-items: flex-end;
-            padding: 2rem;
-            z-index: 1;
-        }
-
-        .location-info h3 {
-            color: var(--white);
-            font-size: 1.5rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .location-info p {
-            color: rgba(255,255,255,0.8);
-            font-size: 0.9rem;
-            margin: 0;
-        }
-
-        /* Section Divider Images */
-        .section-divider {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-            display: block;
-            margin: 3rem 0;
-        }
-
-        @media (max-width: 768px) {
-            .section-divider {
-                height: 200px;
-            }
-
-            .location-card {
-                height: 240px;
-            }
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            .header-container {
-                padding: 0 1.5rem;
-            }
-
-            nav {
-                gap: 1.5rem;
-                font-size: 0.85rem;
-            }
-
-            .hero-content {
-                padding: 3rem 1.5rem;
-            }
-
-            .hero-image {
-                height: 300px;
-            }
-
-            .property-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-stats {
-                grid-template-columns: 1fr;
-            }
-
-            .btn-header {
-                display: none;
-            }
-
-            nav {
-                display: none;
-            }
-
-            .hamburger {
-                display: flex;
-            }
-
-            header {
-                position: relative;
-            }
-
-            .hero {
-                margin-top: 0;
-            }
-
-            .location-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* Robust Filter Styles */
-        .robust-filter-container {
-            background: var(--light-bg);
-            border-radius: 8px;
-            padding: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        .filter-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-bottom: 2rem;
-            border-bottom: 2px solid var(--accent-gold);
-            padding-bottom: 1rem;
-        }
-
-        .filter-header h3 {
-            margin: 0;
-            font-size: 1.5rem;
-        }
-
-        .filter-reset-btn {
-            background: transparent;
-            border: 1px solid var(--accent-gold);
-            color: var(--accent-gold);
-            padding: 0.5rem 1rem;
-            border-radius: 4px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s ease;
-        }
-
-        .filter-reset-btn:hover {
-            background: var(--accent-gold);
             color: white;
-        }
-
-        .filter-panel {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .filter-section {
-            background: white;
-            border: 1px solid var(--border);
-            border-radius: 6px;
+            font-size: 14px;
+            position: relative;
             overflow: hidden;
         }
-
-        .filter-section-header {
-            background: #fafafa;
-            padding: 1rem;
-            cursor: pointer;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--border);
-            transition: background 0.3s ease;
-        }
-
-        .filter-section-header:hover {
-            background: #f0ebe3;
-        }
-
-        .filter-section-header h4 {
-            margin: 0;
-            font-size: 1rem;
-            font-weight: 600;
-        }
-
-        .toggle-icon {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: var(--accent-gold);
-            transition: transform 0.3s ease;
-        }
-
-        .filter-section-header.active .toggle-icon {
-            transform: rotate(45deg);
-        }
-
-        .filter-options {
-            padding: 1rem;
-            display: none;
-        }
-
-        .filter-options.active {
-            display: block;
-        }
-
-        .filter-checkbox {
-            display: flex;
-            align-items: center;
-            padding: 0.75rem 0;
-            cursor: pointer;
-            user-select: none;
-        }
-
-        .filter-checkbox input[type="checkbox"] {
-            width: 18px;
-            height: 18px;
-            margin-right: 0.75rem;
-            cursor: pointer;
-            accent-color: var(--accent-gold);
-        }
-
-        .checkbox-label {
-            font-size: 0.95rem;
-            color: var(--primary-text);
-            font-weight: 500;
-        }
-
-        .filter-results {
-            background: white;
-            padding: 1rem;
-            border-radius: 6px;
-            border: 1px solid var(--accent-gold);
-            text-align: center;
-            font-weight: 600;
-        }
-
-        .filter-results strong {
-            color: var(--accent-gold);
-            font-size: 1.1rem;
-        }
-
-        /* Direct/Indirect Badge Styles */
-        .property-card-compact {
-            position: relative;
-        }
-
         .sourcing-badge {
             position: absolute;
             top: 10px;
             right: 10px;
-            background: white;
-            padding: 0.5rem 0.75rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
             font-weight: 600;
+            background: white;
+        }
+        .direct { color: #27ae60; }
+        .indirect { color: #e74c3c; }
+        .property-info {
+            padding: 20px;
+        }
+        .property-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+        .property-details {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        .property-price {
+            font-size: 20px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+        .view-btn {
+            background: #667eea;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: 600;
+            width: 100%;
+            transition: background 0.3s;
+        }
+        .view-btn:hover { background: #5568d3; }
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            animation: fadeIn 0.3s;
+        }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+        .modal-content {
+            background: white;
+            margin: 50px auto;
+            padding: 30px;
+            border-radius: 8px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            animation: slideIn 0.3s;
+        }
+        @keyframes slideIn { from { transform: translateY(-50px); } to { transform: translateY(0); } }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+        .close:hover { color: #000; }
+        .about-section {
+            background: white;
+            padding: 60px 20px;
+            margin-bottom: 60px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .about-section p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        .team-member {
+            text-align: center;
+        }
+        .member-name {
+            font-weight: 600;
+            margin-top: 15px;
+            color: #1a1a2e;
+        }
+        .member-title {
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        .blog-section {
+            margin-bottom: 60px;
+        }
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        .blog-card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            z-index: 5;
-            display: flex;
-            align-items: center;
-            gap: 0.4rem;
+            transition: transform 0.3s;
         }
-
-        .sourcing-badge.direct {
-            border: 2px solid var(--accent-gold);
-            color: var(--accent-gold);
+        .blog-card:hover { transform: translateY(-5px); }
+        .blog-image {
+            height: 200px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
-
-        .sourcing-badge.indirect {
-            border: 2px solid #9ca3af;
-            color: #6b7280;
+        .blog-content {
+            padding: 20px;
         }
-
-        /* Mobile Responsive Filter */
+        .blog-title {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #1a1a2e;
+        }
+        .blog-excerpt {
+            font-size: 14px;
+            color: #7f8c8d;
+            margin-bottom: 15px;
+        }
+        .read-more {
+            color: #667eea;
+            font-weight: 600;
+            text-decoration: none;
+        }
+        footer {
+            background: #1a1a2e;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        footer p { margin-bottom: 10px; }
         @media (max-width: 768px) {
-            .filter-panel {
-                grid-template-columns: 1fr;
-            }
-
-            .robust-filter-container {
-                padding: 1.5rem;
-            }
+            h1 { font-size: 32px; }
+            .hero { padding: 40px 20px; }
+            .hero p { font-size: 16px; }
+            .filter-grid { grid-template-columns: 1fr; }
+            .properties-grid { grid-template-columns: 1fr; }
+            nav a { margin-left: 15px; font-size: 12px; }
+            h2 { font-size: 24px; }
+        }
+        .result-count {
+            margin-bottom: 20px;
+            color: #7f8c8d;
+            font-size: 14px;
         }
     </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">GROUND FLOOR SHOP</div>
+                <nav>
+                    <a href="#properties">Properties</a>
+                    <a href="#about">About</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+        </div>
+    </header>
 
-    <!-- JSON-LD Schema Markup -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Ground Floor Shop",
-        "alternateName": "UberPod Realty",
-        "url": "https://groundfloorshop.com",
-        "logo": "https://groundfloorshop.com/logo.svg",
-        "description": "Mumbai's premier ground-floor commercial real estate marketplace with 500+ verified transactions",
-        "sameAs": [
-            "https://www.instagram.com/groundfloorshop",
-            "https://www.facebook.com/groundfloorshop"
-        ],
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Bhandup West",
-            "addressLocality": "Mumbai",
-            "addressRegion": "Maharashtra",
-            "postalCode": "400078",
-            "addressCountry": "IN"
-        },
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "contactType": "Sales",
-            "telephone": "+91-77100-19850",
-            "email": "amjad@rentorsaleproperties.in"
-        },
-        "areaServed": [
-            "South Mumbai",
-            "Bandra",
-            "Khar",
-            "Santacruz",
-            "Juhu",
-            "Andheri",
-            "BKC",
-            "Chandivali"
-        ]
-    }
+    <section class="hero">
+        <h1>Premium Ground Floor Commercial Real Estate</h1>
+        <p>Connect with verified landlords, tenants, and investors across Mumbai. Transparent pricing, zero hidden fees, fast execution.</p>
+        <button class="cta-primary">Browse Properties</button>
+    </section>
+
+    <div class="container">
+        <section class="filters" id="filterSection">
+            <div class="filter-grid">
+                <div class="filter-group">
+                    <label for="location">Location</label>
+                    <select id="location">
+                        <option value="">All Locations</option>
+                        <option value="bandra">Bandra West</option>
+                        <option value="andheri">Andheri West</option>
+                        <option value="santacruz">Santacruz West</option>
+                        <option value="khar">Khar West</option>
+                        <option value="bkc">BKC</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="type">Property Type</label>
+                    <select id="type">
+                        <option value="">All Types</option>
+                        <option value="retail">Retail Shop</option>
+                        <option value="office">Office Space</option>
+                        <option value="food">F&B/Restaurant</option>
+                        <option value="showroom">Showroom</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="priceRange">Price Range (₹)</label>
+                    <select id="priceRange">
+                        <option value="">Any Price</option>
+                        <option value="0-50L">Below 50 Lakhs</option>
+                        <option value="50L-1Cr">50 Lakhs - 1 Crore</option>
+                        <option value="1Cr-2Cr">1 - 2 Crore</option>
+                        <option value="2Cr+">Above 2 Crore</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sizeRange">Built-up Size (sqft)</label>
+                    <select id="sizeRange">
+                        <option value="">Any Size</option>
+                        <option value="0-500">0-500</option>
+                        <option value="500-1000">500-1000</option>
+                        <option value="1000-2000">1000-2000</option>
+                        <option value="2000+">2000+</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="transaction">Transaction Type</label>
+                    <select id="transaction">
+                        <option value="">All Types</option>
+                        <option value="sale">Sale</option>
+                        <option value="lease">Lease</option>
+                        <option value="both">Both</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sourcing">Sourcing Type</label>
+                    <select id="sourcing">
+                        <option value="">All Sources</option>
+                        <option value="direct">Direct</option>
+                        <option value="indirect">Indirect</option>
+                    </select>
+                </div>
+            </div>
+        </section>
+
+        <section class="properties-section" id="properties">
+            <h2>Available Properties</h2>
+            <div class="result-count" id="resultCount"></div>
+            <div class="properties-grid" id="propertyGrid"></div>
+        </section>
+
+        <section class="about-section" id="about">
+            <div class="about-content">
+                <h2>About Ground Floor Shop</h2>
+                <p>Ground Floor Shop is Mumbai's premier marketplace for ground floor commercial real estate. We connect verified landlords, tenants, and investors with transparent pricing and zero hidden fees.</p>
+                <p>Our mission is to simplify commercial property transactions by eliminating unnecessary middlemen, reducing costs, and accelerating deal execution.</p>
+                <h3 style="margin-top: 30px; margin-bottom: 20px; font-size: 22px;">Founding Team</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div style="width: 120px; height: 120px; margin: 0 auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%;"></div>
+                        <div class="member-name">Amjad Shaikh</div>
+                        <div class="member-title">Founder & CEO</div>
+                    </div>
+                    <div class="team-member">
+                        <div style="width: 120px; height: 120px; margin: 0 auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 50%;"></div>
+                        <div class="member-name">Farhaan Shaikh</div>
+                        <div class="member-title">Co-Founder</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section" id="blog">
+            <h2>Latest Insights</h2>
+            <div class="blog-grid" id="blogGrid"></div>
+        </section>
+    </div>
+
+    <footer id="contact">
+        <div class="container">
+            <h3 style="margin-bottom: 20px;">Get In Touch</h3>
+            <p>Email: contact@groundfloorshop.com</p>
+            <p>Phone: +91 77100 19850</p>
+            <p style="margin-top: 30px; border-top: 1px solid #444; padding-top: 20px;">&copy; 2026 Ground Floor Shop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <script>
+        const properties = [
+            { id: 1, location: 'bandra', type: 'retail', price: '75L', size: '800', transaction: 'sale', sourcing: 'direct', title: 'Premium Retail Shop - Bandra West', desc: 'Ground floor retail space in prime Bandra location. High foot traffic, excellent for fashion/F&B.' },
+            { id: 2, location: 'andheri', type: 'office', price: '1.2Cr', size: '1500', transaction: 'lease', sourcing: 'indirect', title: 'Corporate Office - Andheri West', desc: 'Modern office space with parking. Ideal for startups and established firms.' },
+            { id: 3, location: 'santacruz', type: 'food', price: '1.5Cr', size: '1200', transaction: 'sale', sourcing: 'direct', title: 'F&B Ready Space - Santacruz', desc: 'Licensed F&B space near Milan Subway. Turnkey setup, immediate possession.' },
+            { id: 4, location: 'khar', type: 'showroom', price: '2.2Cr', size: '2000', transaction: 'both', sourcing: 'direct', title: 'Luxury Showroom - Khar West', desc: 'Premium showroom space. Perfect for automotive, watches, jewelry, or fashion brands.' },
+            { id: 5, location: 'bkc', type: 'office', price: '2.5Cr', size: '2500', transaction: 'lease', sourcing: 'indirect', title: 'BKC Corporate Space', desc: 'Grade-A office space in Business District. Modern amenities, 24/7 security.' },
+            { id: 6, location: 'bandra', type: 'retail', price: '1.1Cr', size: '1100', transaction: 'sale', sourcing: 'indirect', title: 'Retail Hub - Bandstand', desc: 'High-visibility street-front property. Excellent for retail and hospitality.' },
+            { id: 7, location: 'andheri', type: 'food', price: '85L', size: '950', transaction: 'lease', sourcing: 'direct', title: 'QSR Space - Andheri', desc: 'Ready-to-operate quick service restaurant space. Full kitchen setup.' },
+            { id: 8, location: 'santacruz', type: 'office', price: '1.8Cr', size: '1800', transaction: 'sale', sourcing: 'direct', title: 'IT Office Hub - Santacruz', desc: 'Spacious office for IT/tech companies. Flexible floor plans available.' },
+            { id: 9, location: 'khar', type: 'retail', price: '95L', size: '900', transaction: 'lease', sourcing: 'indirect', title: 'Boutique Space - Khar', desc: 'Premium boutique for luxury brands. High-end clientele area.' },
+            { id: 10, location: 'bkc', type: 'showroom', price: '3.2Cr', size: '3000', transaction: 'sale', sourcing: 'indirect', title: 'Premium Showroom - BKC', desc: 'Flagship showroom opportunity. Maximum visibility in business hub.' },
+            { id: 11, location: 'bandra', type: 'office', price: '1.4Cr', size: '1400', transaction: 'both', sourcing: 'direct', title: 'Creative Space - Bandra', desc: 'Loft-style office ideal for creative agencies, studios, and startups.' },
+            { id: 12, location: 'andheri', type: 'showroom', price: '1.8Cr', size: '1600', transaction: 'lease', sourcing: 'direct', title: 'Automotive Showroom - Andheri', desc: 'Large ground floor space perfect for car/bike showroom. Easy access.' },
+            { id: 13, location: 'santacruz', type: 'food', price: '1.3Cr', size: '1100', transaction: 'sale', sourcing: 'indirect', title: 'Cloud Kitchen - Santacruz', desc: 'Operational cloud kitchen with delivery infrastructure in place.' },
+            { id: 14, location: 'khar', type: 'office', price: '2.1Cr', size: '2100', transaction: 'lease', sourcing: 'direct', title: 'Executive Office - Khar', desc: 'Premium office with conference rooms and modern facilities.' }
+        ];
+
+        const blogs = [
+            { title: 'Ground Floor Real Estate: The Ultimate Guide for Investors', excerpt: 'Understand why ground floor properties command premium valuations and attract diverse business opportunities...' },
+            { title: 'Top 10 High-Performing Retail Locations in Mumbai', excerpt: 'Discover the most profitable retail micro-zones and foot traffic patterns across Mumbai...' },
+            { title: 'Commercial Lease vs Sale: Which is Right for Your Business?', excerpt: 'A comprehensive comparison of leasing and purchasing commercial property in Mumbai...' },
+            { title: 'How to Negotiate Better Commercial Property Deals', excerpt: 'Expert strategies to secure favorable terms and pricing on commercial real estate transactions...' },
+            { title: 'The Future of Ground Floor Retail in Mumbai', excerpt: 'Market trends, challenges, and opportunities in the evolving retail landscape...' },
+            { title: 'Tenant Rights and Responsibilities: A Legal Overview', excerpt: 'Essential knowledge for both landlords and tenants in commercial property agreements...' },
+            { title: 'Smart Property Management: Maximizing Rental Returns', excerpt: 'Best practices for maintaining, marketing, and managing commercial properties profitably...' }
+        ];
+
+        function renderProperties() {
+            const grid = document.getElementById('propertyGrid');
+            grid.innerHTML = properties.map(p => `
+                <div class="property-card" onclick="openModal('${p.title}', '${p.desc}', '${p.price}', '${p.size}', '${p.sourcing}')">
+                    <div class="property-image">
+                        <div style="text-align: center;">
+                            <div style="font-size: 48px; margin-bottom: 10px;">🏢</div>
+                            <div>${p.location.toUpperCase()} | ${p.type.toUpperCase()}</div>
+                        </div>
+                        <span class="sourcing-badge ${p.sourcing}">${p.sourcing.toUpperCase()}</span>
+                    </div>
+                    <div class="property-info">
+                        <div class="property-title">${p.title}</div>
+                        <div class="property-details">
+                            <div>📍 ${p.location}</div>
+                            <div>📐 ${p.size} sqft</div>
+                            <div>🔄 ${p.transaction}</div>
+                        </div>
+                        <div class="property-price">₹${p.price}</div>
+                        <button class="view-btn">View Details</button>
+                    </div>
+                </div>
+            `).join('');
+            document.getElementById('resultCount').textContent = `Showing ${properties.length} properties`;
+        }
+
+        function renderBlog() {
+            const grid = document.getElementById('blogGrid');
+            grid.innerHTML = blogs.map(b => `
+                <div class="blog-card">
+                    <div class="blog-image"></div>
+                    <div class="blog-content">
+                        <div class="blog-title">${b.title}</div>
+                        <div class="blog-excerpt">${b.excerpt}</div>
+                        <a href="#" class="read-more">Read More →</a>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function openModal(title, desc, price, size, sourcing) {
+            document.getElementById('modalBody').innerHTML = `
+                <h3>${title}</h3>
+                <p><strong>Price:</strong> ₹${price}</p>
+                <p><strong>Built-up Size:</strong> ${size} sqft</p>
+                <p><strong>Sourcing:</strong> <span class="${sourcing}">${sourcing.toUpperCase()}</span></p>
+                <p><strong>Description:</strong></p>
+                <p>${desc}</p>
+                <p style="margin-top: 20px; padding-top: 20px; border-top: 1px solid #ddd;">
+                    <strong>Contact us to schedule a viewing:</strong><br>
+                    Email: contact@groundfloorshop.com<br>
+                    Phone: +91 77100 19850
+                </p>
+            `;
+            document.getElementById('modal').style.display = 'block';
+        }
+
+        document.querySelector('.close').onclick = () => document.getElementById('modal').style.display = 'none';
+        window.onclick = (e) => {
+            if (e.target === document.getElementById('modal')) document.getElementById('modal').style.display = 'none';
+        };
+
+        renderProperties();
+        renderBlog();
+
+        document.querySelectorAll('#filterSection select').forEach(select => {
+            select.addEventListener('change', renderProperties);
+        });
     </script>
 
     <script type="application/ld+json">
@@ -1387,1712 +562,16 @@
         "@context": "https://schema.org",
         "@type": "LocalBusiness",
         "name": "Ground Floor Shop",
-        "image": "https://images.unsplash.com/photo-1758448500766-fdbb9f0925bc?w=1200&h=630&fit=crop",
-        "description": "Ground-floor commercial real estate marketplace. Direct landlord-tenant connections, verified properties, transparent pricing.",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Bhandup West",
-            "addressLocality": "Mumbai",
-            "addressRegion": "Maharashtra",
-            "postalCode": "400078",
-            "addressCountry": "IN"
-        },
-        "telephone": "+91-77100-19850",
-        "email": "amjad@rentorsaleproperties.in",
         "url": "https://groundfloorshop.com",
-        "priceRange": "₹50,000 - ₹10,00,000+",
-        "knowsAbout": [
-            "Commercial Real Estate",
-            "Commercial Leasing",
-            "Retail Space",
-            "Ground-Floor Properties",
-            "RERA Compliance"
-        ]
+        "telephone": "+91-77100-19850",
+        "email": "contact@groundfloorshop.com",
+        "description": "Premium ground floor commercial real estate marketplace in Mumbai",
+        "areaServed": {
+            "@type": "City",
+            "name": "Mumbai",
+            "url": "https://en.wikipedia.org/wiki/Mumbai"
+        }
     }
     </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [
-            {
-                "@type": "ListItem",
-                "position": 1,
-                "name": "Home",
-                "item": "https://groundfloorshop.com"
-            },
-            {
-                "@type": "ListItem",
-                "position": 2,
-                "name": "Properties",
-                "item": "https://groundfloorshop.com/#properties"
-            },
-            {
-                "@type": "ListItem",
-                "position": 3,
-                "name": "About",
-                "item": "https://groundfloorshop.com/#about"
-            },
-            {
-                "@type": "ListItem",
-                "position": 4,
-                "name": "Blog",
-                "item": "https://groundfloorshop.com/#blog"
-            },
-            {
-                "@type": "ListItem",
-                "position": 5,
-                "name": "Contact",
-                "item": "https://groundfloorshop.com/#contact"
-            }
-        ]
-    }
-    </script>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "FAQPage",
-        "mainEntity": [
-            {
-                "@type": "Question",
-                "name": "What is Ground Floor Shop?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ground Floor Shop is Mumbai's premier ground-floor commercial real estate marketplace. We connect property owners, tenants, and investors with verified listings, transparent pricing, and RERA-compliant deals across South Mumbai, Bandra, Santacruz, Andheri, BKC, and Chandivali."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How many verified transactions does Ground Floor Shop have?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ground Floor Shop has facilitated 500+ documented and verified transactions across Mumbai. Every transaction in our database is verified against ownership documents, RERA compliance, and clear title."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "Is Ground Floor Shop RERA registered?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Yes. UberPod Realty, the operator of Ground Floor Shop, is RERA registered with MahaRERA Registration Number A51800042560. All transactions comply with Real Estate (Regulation and Development) Act, 2016 guidelines."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "How fast can I find and lease commercial space on Ground Floor Shop?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "The typical timeline from listing search to lease execution is 1-2 weeks on Ground Floor Shop, compared to 1-3 months through traditional brokers. Our verified database, direct landlord connections, and streamlined process eliminate delays."
-                }
-            },
-            {
-                "@type": "Question",
-                "name": "What zones does Ground Floor Shop cover?",
-                "acceptedAnswer": {
-                    "@type": "Answer",
-                    "text": "Ground Floor Shop operates across South Mumbai, Bandra, Khar, Santacruz, Juhu, Andheri West, BKC, and Chandivali. We specialize in ground-floor commercial properties in these premium zones."
-                }
-            }
-        ]
-    }
-    </script>
-
-</head>
-<body>
-
-<!-- Header -->
-<header>
-    <div class="header-container">
-        <div class="logo">Ground Floor <span class="logo-accent">Shop</span></div>
-        <nav>
-            <a href="#" class="nav-link active" onclick="showSection('home')">Home</a>
-            <a href="#" class="nav-link" onclick="showSection('properties')">Properties</a>
-            <a href="#" class="nav-link" onclick="showSection('about')">About</a>
-            <a href="#" class="nav-link" onclick="showSection('blog')">Blog</a>
-            <a href="#" class="nav-link" onclick="showSection('contact')">Contact</a>
-            <button class="btn-primary btn-header" onclick="showSection('contact')">Get Started</button>
-        </nav>
-        <button class="hamburger" id="hamburgerBtn" onclick="toggleMobileMenu()">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
-    </div>
-    <div class="mobile-menu" id="mobileMenu">
-        <a href="#" onclick="showSection('home'); toggleMobileMenu();">Home</a>
-        <a href="#" onclick="showSection('properties'); toggleMobileMenu();">Properties</a>
-        <a href="#" onclick="showSection('about'); toggleMobileMenu();">About</a>
-        <a href="#" onclick="showSection('blog'); toggleMobileMenu();">Blog</a>
-        <a href="#" onclick="showSection('contact'); toggleMobileMenu();">Contact</a>
-        <button class="btn-primary" onclick="showSection('contact'); toggleMobileMenu();" style="width: 100%;">Get Started</button>
-    </div>
-</header>
-
-<!-- Hero Section -->
-<section class="hero" id="home">
-    <div class="hero-image" id="heroImage">
-        <span>Premium Commercial Space Photography</span>
-    </div>
-    <div class="hero-content">
-        <h1>Ground-Floor Commercial Real Estate, Made Simple</h1>
-        <p>Connect with verified landlords, tenants, and investors across Mumbai. Transparent pricing, fast execution, no middlemen surprises.</p>
-        <div class="hero-cta">
-            <button class="btn-primary" onclick="showSection('properties')">Search Properties</button>
-            <button class="btn-secondary" onclick="showSection('contact')">Connect With Us</button>
-        </div>
-        <div class="hero-stats">
-            <div class="stat-item">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">Spaces Transacted</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">8</div>
-                <div class="stat-label">Prime Zones</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">₹1-50L</div>
-                <div class="stat-label">Monthly Rent Range</div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Properties Section - Market Snapshot Dashboard -->
-<section class="properties-section" id="properties">
-    <div class="container">
-        <div class="section-header">
-            <h2>Live Marketplace</h2>
-            <p class="section-subtitle">18+ verified ground-floor properties across Mumbai • Filter by location</p>
-        </div>
-
-        <!-- Location Filter Tabs -->
-        <!-- Multi-Dimensional Filter Panel -->
-        <div class="robust-filter-container">
-            <div class="filter-header">
-                <h3>Filter Properties</h3>
-                <button class="filter-reset-btn" onclick="resetAllFilters()">Reset All</button>
-            </div>
-
-            <div class="filter-panel">
-                <!-- Sourcing Filter -->
-                <div class="filter-section">
-                    <div class="filter-section-header" onclick="toggleFilterSection(this)">
-                        <h4>🔗 Direct / Indirect</h4>
-                        <span class="toggle-icon">+</span>
-                    </div>
-                    <div class="filter-options" style="display: none;">
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="sourcing" value="direct" onchange="applyFilters()">
-                            <span class="checkbox-label">🔗 Direct (Owner contact)</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="sourcing" value="indirect" onchange="applyFilters()">
-                            <span class="checkbox-label">↔️ Indirect (Through broker)</span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Location Filter -->
-                <div class="filter-section">
-                    <div class="filter-section-header" onclick="toggleFilterSection(this)">
-                        <h4>📍 Location</h4>
-                        <span class="toggle-icon">+</span>
-                    </div>
-                    <div class="filter-options" style="display: none;">
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="location" value="bandra" onchange="applyFilters()">
-                            <span class="checkbox-label">Bandra West</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="location" value="santacruz" onchange="applyFilters()">
-                            <span class="checkbox-label">Santacruz West</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="location" value="andheri" onchange="applyFilters()">
-                            <span class="checkbox-label">Andheri West</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="location" value="bkc" onchange="applyFilters()">
-                            <span class="checkbox-label">BKC</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="location" value="khar" onchange="applyFilters()">
-                            <span class="checkbox-label">Khar West</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="location" value="juhu" onchange="applyFilters()">
-                            <span class="checkbox-label">Juhu</span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Property Type Filter -->
-                <div class="filter-section">
-                    <div class="filter-section-header" onclick="toggleFilterSection(this)">
-                        <h4>🏪 Property Type</h4>
-                        <span class="toggle-icon">+</span>
-                    </div>
-                    <div class="filter-options" style="display: none;">
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="type" value="luxury-retail" onchange="applyFilters()">
-                            <span class="checkbox-label">Luxury Retail</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="type" value="premium-retail" onchange="applyFilters()">
-                            <span class="checkbox-label">Premium Retail</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="type" value="showroom" onchange="applyFilters()">
-                            <span class="checkbox-label">Showroom</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="type" value="restaurant" onchange="applyFilters()">
-                            <span class="checkbox-label">Restaurant / F&B</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="type" value="large-format" onchange="applyFilters()">
-                            <span class="checkbox-label">Large Format</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="type" value="high-street" onchange="applyFilters()">
-                            <span class="checkbox-label">High-Street Retail</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="type" value="office" onchange="applyFilters()">
-                            <span class="checkbox-label">Grade-A Office</span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Price Range Filter -->
-                <div class="filter-section">
-                    <div class="filter-section-header" onclick="toggleFilterSection(this)">
-                        <h4>💰 Monthly Rent Range</h4>
-                        <span class="toggle-icon">+</span>
-                    </div>
-                    <div class="filter-options" style="display: none;">
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="price-range" value="under-15" onchange="applyFilters()">
-                            <span class="checkbox-label">Under ₹15L</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="price-range" value="15-25" onchange="applyFilters()">
-                            <span class="checkbox-label">₹15L - ₹25L</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="price-range" value="25-40" onchange="applyFilters()">
-                            <span class="checkbox-label">₹25L - ₹40L</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="price-range" value="above-40" onchange="applyFilters()">
-                            <span class="checkbox-label">₹40L+</span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Size Range Filter -->
-                <div class="filter-section">
-                    <div class="filter-section-header" onclick="toggleFilterSection(this)">
-                        <h4>📐 Space Size</h4>
-                        <span class="toggle-icon">+</span>
-                    </div>
-                    <div class="filter-options" style="display: none;">
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="size-range" value="under-1500" onchange="applyFilters()">
-                            <span class="checkbox-label">Under 1,500 sf</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="size-range" value="1500-3000" onchange="applyFilters()">
-                            <span class="checkbox-label">1,500 - 3,000 sf</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="size-range" value="3000-6000" onchange="applyFilters()">
-                            <span class="checkbox-label">3,000 - 6,000 sf</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="size-range" value="above-6000" onchange="applyFilters()">
-                            <span class="checkbox-label">6,000+ sf</span>
-                        </label>
-                    </div>
-                </div>
-
-                <!-- Transaction Type Filter -->
-                <div class="filter-section">
-                    <div class="filter-section-header" onclick="toggleFilterSection(this)">
-                        <h4>🔄 Transaction Type</h4>
-                        <span class="toggle-icon">+</span>
-                    </div>
-                    <div class="filter-options" style="display: none;">
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="transaction" value="rent" onchange="applyFilters()" checked>
-                            <span class="checkbox-label">Rent</span>
-                        </label>
-                        <label class="filter-checkbox">
-                            <input type="checkbox" data-filter="transaction" value="sale" onchange="applyFilters()">
-                            <span class="checkbox-label">Sale</span>
-                        </label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="filter-results">
-                <p id="filterResultsText">Showing <strong>14</strong> properties</p>
-            </div>
-        </div>
-
-        <!-- Property Grid - Compact 3-column -->
-        <div class="property-grid-compact">
-            <!-- BANDRA WEST - Luxury Retail -->
-            <div class="property-card-compact" data-location="bandra" data-direct="true" data-type="luxury-retail" data-price-range="25-40" data-size-range="3000-6000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1583590699815-83ca84d13605?w=500&h=300&fit=crop" alt="Luxury Retail Showroom" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Bandra West</div>
-                    <div class="type-tag">Luxury Retail</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>Turner House</h4>
-                    <p class="location-detail">📍 Linking Road</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">4,650 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹70L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">Ground floor • ₹1,505/sf • 6-mo deposit</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>Turner House, Bandra West</h3>
-                        <p><strong>Location:</strong> Linking Road, Bandra West</p>
-                        <p><strong>Type:</strong> Luxury Retail Showroom</p>
-                        <p><strong>Size:</strong> 4,650 carpet sq ft</p>
-                        <p><strong>Rent:</strong> ₹70L/month (₹1,505/sf)</p>
-                        <p><strong>Available:</strong> Ground floor only</p>
-                        <p><strong>Lease Terms:</strong> 6-month deposit • Whole floor • Prime frontage</p>
-                        <p><strong>Best For:</strong> Flagship luxury brands, high-end showrooms, premium retail</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-card-compact" data-location="bandra" data-direct="false" data-type="premium-retail" data-price-range="25-40" data-size-range="3000-6000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=300&fit=crop" alt="Premium Retail Store" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Bandra West</div>
-                    <div class="type-tag">Premium Retail</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>DLH IX</h4>
-                    <p class="location-detail">📍 Linking Road</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">5,331 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹64L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">B+G+1 • ₹1,201/sf • Flagship ready</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>DLH IX, Linking Road, Bandra West</h3>
-                        <p><strong>Location:</strong> Linking Road, Bandra West</p>
-                        <p><strong>Type:</strong> Premium Retail Showroom</p>
-                        <p><strong>Size:</strong> 5,331 carpet sq ft</p>
-                        <p><strong>Configuration:</strong> Basement + Ground + First floor</p>
-                        <p><strong>Rent:</strong> ₹64L/month (₹1,201/sf)</p>
-                        <p><strong>Lease Terms:</strong> 6-month deposit • Multi-floor flexibility</p>
-                        <p><strong>Best For:</strong> Luxury brands, flagship stores, showrooms</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-card-compact" data-location="bandra" data-direct="true" data-type="showroom" data-price-range="15-25" data-size-range="1500-3000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=500&h=300&fit=crop" alt="Premium Showroom Space" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Bandra West</div>
-                    <div class="type-tag">Showroom</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>Turner Rd Jewellery & Showroom</h4>
-                    <p class="location-detail">📍 Near Tavaa</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">2,000 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹22.5L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">30 ft frontage • Separable floors • ₹1,125/sf</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>Turner Rd Jewellery & Retail Showroom</h3>
-                        <p><strong>Location:</strong> Turner Road, Bandra West (near Tavaa)</p>
-                        <p><strong>Type:</strong> Premium Jewellery & Retail Showroom</p>
-                        <p><strong>Size Options:</strong> Ground 1,000 sf / First 1,000 sf (separable)</p>
-                        <p><strong>Rent:</strong> ₹22.5L/month (₹1,125/sf) + deposit</p>
-                        <p><strong>Frontage:</strong> 30 ft prime main-road visibility</p>
-                        <p><strong>Best For:</strong> Jewellery brands, luxury retail, designer showrooms</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-card-compact" data-location="bandra" data-direct="false" data-type="restaurant" data-price-range="under-15" data-size-range="1500-3000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=500&h=300&fit=crop" alt="Restaurant & Dining Space" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Bandra West</div>
-                    <div class="type-tag">Restaurant</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>Waterfield Rd Restaurant</h4>
-                    <p class="location-detail">📍 Opposite China Gate</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">1,450 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹10L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">GF+First+Otla • Multi-level • ₹690/sf</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>Waterfield Rd Restaurant, Bandra West</h3>
-                        <p><strong>Location:</strong> Waterfield Road, opposite China Gate</p>
-                        <p><strong>Type:</strong> Restaurant • F&B</p>
-                        <p><strong>Space:</strong> Ground 600 sf / First 650 sf / Otla 200 sf</p>
-                        <p><strong>Rent:</strong> ₹10L/month negotiable (₹690/sf)</p>
-                        <p><strong>Status:</strong> Multi-brand talks ongoing</p>
-                        <p><strong>Best For:</strong> Restaurants, cafés, cloud kitchens</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-card-compact" data-location="bandra" data-direct="true" data-type="large-format" data-price-range="25-40" data-size-range="above-6000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=500&h=300&fit=crop" alt="Large Format Retail Space" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Bandra West</div>
-                    <div class="type-tag">Large Format</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>The Water Front</h4>
-                    <p class="location-detail">📍 Bandra West</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">8,000 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹40L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">Large-format • ₹500/sf • Whole floor</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>The Water Front, Bandra West</h3>
-                        <p><strong>Location:</strong> Bandra West</p>
-                        <p><strong>Type:</strong> Large Format Retail</p>
-                        <p><strong>Size:</strong> 8,000 carpet sq ft (whole floor)</p>
-                        <p><strong>Rent:</strong> ₹40L/month (₹500/sf)</p>
-                        <p><strong>Format:</strong> Ideal for supermarket, hypermarket, large retail</p>
-                        <p><strong>Best For:</strong> DMart-style, hypermarkets, large-format retail</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- KHAR WEST -->
-            <div class="property-card-compact" data-location="khar" data-direct="false" data-type="luxury-retail" data-price-range="15-25" data-size-range="1500-3000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1579403132519-d15eebb0b32c?w=500&h=300&fit=crop" alt="Luxury Jewellery Showroom" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Khar West</div>
-                    <div class="type-tag">Luxury Retail</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>Kusum Kunj • Sarita Handa</h4>
-                    <p class="location-detail">📍 Main Linking Rd Corner</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">2,000 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹18L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">Corner plot • Luxury brands OK • ₹900/sf</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>Kusum Kunj • Sarita Handa Showroom, Khar West</h3>
-                        <p><strong>Location:</strong> Main Linking Road corner, Khar West</p>
-                        <p><strong>Type:</strong> Luxury Showroom</p>
-                        <p><strong>Size:</strong> 2,000 carpet sq ft</p>
-                        <p><strong>Rent:</strong> ₹18L/month negotiable (₹900/sf)</p>
-                        <p><strong>Vacant:</strong> 1 August 2026</p>
-                        <p><strong>Permitted:</strong> Jewellery • Designer Fashion • Home Décor • Cafés • QSR (induction OK)</p>
-                        <p><strong>Terms:</strong> 3+2 years • 15-day brokerage</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- SANTACRUZ WEST -->
-            <div class="property-card-compact" data-location="santacruz" data-direct="true" data-type="large-format" data-price-range="40-60" data-size-range="above-6000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1567521464027-f127ff144326?w=500&h=300&fit=crop" alt="Multi-Level Retail Showroom" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Santacruz West</div>
-                    <div class="type-tag">Large Format</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>Linking Road Showroom</h4>
-                    <p class="location-detail">📍 S V Road Area</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">10,265 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹53L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">Multi-level • ₹516/sf • Flexible splits</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>Linking Road Showroom, Santacruz West</h3>
-                        <p><strong>Location:</strong> Linking Road, Santacruz West</p>
-                        <p><strong>Type:</strong> Premium Large-Format Retail</p>
-                        <p><strong>Configuration:</strong> G + Mezzanine + Basement 5,265 sf (₹31L) / First Floor 5,000 sf (₹22L)</p>
-                        <p><strong>Total Rent:</strong> ₹53L/month (₹516/sf)</p>
-                        <p><strong>Best For:</strong> High-street brands, furniture, multi-floor showrooms</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-card-compact" data-location="santacruz" data-direct="false" data-type="premium-retail" data-price-range="15-25" data-size-range="1500-3000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=500&h=300&fit=crop" alt="Premium Retail Space" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Santacruz West</div>
-                    <div class="type-tag">Premium Retail</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>Orchid Vasundra</h4>
-                    <p class="location-detail">📍 Santacruz West</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">2,418 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹20.55L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">Premium location • ₹850/sf • Ready</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>Orchid Vasundra, Santacruz West</h3>
-                        <p><strong>Location:</strong> Santacruz West</p>
-                        <p><strong>Type:</strong> Premium Retail</p>
-                        <p><strong>Size:</strong> 2,418 carpet sq ft</p>
-                        <p><strong>Rent:</strong> ₹20.55L/month (₹850/sf)</p>
-                        <p><strong>Status:</strong> Available • Ready for occupancy</p>
-                        <p><strong>Best For:</strong> Premium retail, designer brands, showrooms</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- ANDHERI WEST -->
-            <div class="property-card-compact" data-location="andheri" data-direct="true" data-type="high-street" data-price-range="25-40" data-size-range="above-6000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1528873045642-7ddc33eec443?w=500&h=300&fit=crop" alt="High-Street Retail Space" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Andheri West</div>
-                    <div class="type-tag">High-Street</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>High-Street Showroom</h4>
-                    <p class="location-detail">📍 Andheri West</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">9,000 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹31.5L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">G+1 • 14 ft height • ₹350/sf + ₹14 CAM</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>High-Street Showroom, Andheri West</h3>
-                        <p><strong>Location:</strong> Andheri West</p>
-                        <p><strong>Type:</strong> Large-Format High-Street Retail</p>
-                        <p><strong>Configuration:</strong> Ground 5,000 sf / First 4,000 sf</p>
-                        <p><strong>Rent:</strong> ₹31.5L/month (₹350/sf + ₹14 CAM)</p>
-                        <p><strong>Specs:</strong> 14 ft clear height • OC • Lift • Parking available</p>
-                        <p><strong>Best For:</strong> Furniture, electronics, high-street retail, hypermarkets</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-card-compact" data-location="andheri" data-direct="false" data-type="restaurant" data-price-range="15-25" data-size-range="3000-6000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1504674900306-f58aad54d16e?w=500&h=300&fit=crop" alt="Modern Restaurant Space" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Andheri West</div>
-                    <div class="type-tag">Restaurant</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>Link Road Restaurant</h4>
-                    <p class="location-detail">📍 Link Road</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">5,200 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹18L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">Multi-level • Fully furnished • Turnkey</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>Link Road Restaurant, Andheri West</h3>
-                        <p><strong>Location:</strong> Link Road, Andheri West</p>
-                        <p><strong>Type:</strong> Full-Service Restaurant</p>
-                        <p><strong>Space:</strong> GF 2,100 sf / Otla 1,300 sf / First 3,100 sf</p>
-                        <p><strong>Rent:</strong> ₹18L/month</p>
-                        <p><strong>Status:</strong> Fully furnished • All licenses • Turnkey ready</p>
-                        <p><strong>Best For:</strong> Restaurant chains, fine dining, F&B concepts</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- BKC - OFFICES -->
-            <div class="property-card-compact" data-location="bkc" data-direct="true" data-type="office" data-price-range="25-40" data-size-range="3000-6000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=500&h=300&fit=crop" alt="Grade-A Office Space" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">BKC</div>
-                    <div class="type-tag">Grade-A Office</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>IL&FS Tower</h4>
-                    <p class="location-detail">📍 BKC Business District</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">5,901 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹33.04L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">Full furnished • Whole floor • ₹560/sf</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>IL&FS Tower, BKC</h3>
-                        <p><strong>Location:</strong> BKC Business District</p>
-                        <p><strong>Type:</strong> Grade-A Furnished Office</p>
-                        <p><strong>Size:</strong> 5,901 carpet sq ft (saleable 9,441)</p>
-                        <p><strong>Rent:</strong> ₹33.04L/month (₹560/sf)</p>
-                        <p><strong>Status:</strong> Fully furnished • Ready for immediate occupancy</p>
-                        <p><strong>Best For:</strong> IT companies, finance, large corporate teams</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-card-compact" data-location="bkc" data-direct="false" data-type="office" data-price-range="25-40" data-size-range="3000-6000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=300&fit=crop" alt="Modern Office Environment" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">BKC</div>
-                    <div class="type-tag">Grade-A Office</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>Adani Inspire</h4>
-                    <p class="location-detail">📍 BKC Business District</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">5,000 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹31.2L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">Unfurnished • Whole floor • ₹624/sf</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>Adani Inspire, BKC</h3>
-                        <p><strong>Location:</strong> BKC Business District</p>
-                        <p><strong>Type:</strong> Grade-A Unfurnished Office</p>
-                        <p><strong>Size:</strong> 5,000 carpet sq ft (saleable 8,000)</p>
-                        <p><strong>Rent:</strong> ₹31.2L/month (₹624/sf)</p>
-                        <p><strong>Status:</strong> Unfurnished • Ready for customization</p>
-                        <p><strong>Best For:</strong> IT, banking, finance, custom-fitted offices</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="property-card-compact" data-location="bkc" data-direct="true" data-type="office" data-price-range="15-25" data-size-range="3000-6000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1556740738-b6a63e27c4df?w=500&h=300&fit=crop" alt="Premium Office Tower" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">BKC</div>
-                    <div class="type-tag">Grade-A Office</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>Godrej BKC</h4>
-                    <p class="location-detail">📍 BKC Business District</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">5,400 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹23.5L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">Unfurnished • Premium space • ₹435/sf</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>Godrej BKC</h3>
-                        <p><strong>Location:</strong> BKC Business District</p>
-                        <p><strong>Type:</strong> Grade-A Unfurnished Office</p>
-                        <p><strong>Size:</strong> 5,400 carpet sq ft (saleable 8,640)</p>
-                        <p><strong>Rent:</strong> ₹23.5L/month (₹435/sf)</p>
-                        <p><strong>Status:</strong> Unfurnished • Premium building standards</p>
-                        <p><strong>Best For:</strong> Corporate offices, IT companies, finance firms</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- JUHU -->
-            <div class="property-card-compact" data-location="juhu" data-direct="false" data-type="premium-retail" data-price-range="15-25" data-size-range="1500-3000" data-transaction="rent" onclick="openPropertyModal(this)">
-                <img src="https://images.unsplash.com/photo-1594899108383-1f39ff0a2c93?w=500&h=300&fit=crop" alt="Premium Retail and F&B Space" class="property-card-image">
-                <div class="card-header-compact">
-                    <div class="location-tag">Juhu</div>
-                    <div class="type-tag">Premium Retail/F&B</div>
-                </div>
-                <div class="card-body-compact">
-                    <h4>Juhu Shop G+1</h4>
-                    <p class="location-detail">📍 Premium Juhu Zone</p>
-                    <div class="price-row">
-                        <div class="price-item">
-                            <span class="label">Size</span>
-                            <span class="value">2,200 sf</span>
-                        </div>
-                        <div class="price-item">
-                            <span class="label">Rent</span>
-                            <span class="value">₹17.6L</span>
-                        </div>
-                    </div>
-                    <p class="property-detail">Dual-use • Retail or F&B • ₹800/sf</p>
-                </div>
-                <button class="btn-view-details">View Details</button>
-                <div class="hidden-data" style="display:none;">
-                    <div class="full-property">
-                        <h3>Juhu Shop, G+1</h3>
-                        <p><strong>Location:</strong> Juhu, Premium residential zone</p>
-                        <p><strong>Type:</strong> Dual-Use Retail/Restaurant</p>
-                        <p><strong>Configuration:</strong> Ground 1,100 sf / First 1,100 sf (separable)</p>
-                        <p><strong>Rent:</strong> ₹17.6L/month (₹800/sf)</p>
-                        <p><strong>Use:</strong> Retail showroom OR restaurant/café</p>
-                        <p><strong>Best For:</strong> Premium brands, boutique cafés, upscale retail</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div style="text-align: center; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border);">
-            <p style="color: var(--secondary-text); margin-bottom: 1.5rem;">Don't see what you're looking for? <strong>18+ more properties</strong> available across Mumbai</p>
-            <button class="btn-primary" onclick="showSection('contact')">View All Properties & Request</button>
-        </div>
-    </div>
-</section>
-
-<!-- Location Showcase Section -->
-<section class="location-showcase">
-    <div class="container">
-        <h2>Where We Operate: Mumbai's Prime Commercial Zones</h2>
-        <div class="location-grid">
-            <!-- Bandra West -->
-            <div class="location-card">
-                <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=500&h=400&fit=crop" alt="Bandra West - Luxury Retail Hub">
-                <div class="location-overlay">
-                    <div class="location-info">
-                        <h3>Bandra West</h3>
-                        <p>Premium retail, luxury showrooms, high-street commerce</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Santacruz West -->
-            <div class="location-card">
-                <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&h=400&fit=crop" alt="Santacruz West - Commercial Destination">
-                <div class="location-overlay">
-                    <div class="location-info">
-                        <h3>Santacruz West</h3>
-                        <p>Established retail, F&B hotspot, brand headquarters</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Andheri West -->
-            <div class="location-card">
-                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=400&fit=crop" alt="Andheri West - Emerging Commercial Hub">
-                <div class="location-overlay">
-                    <div class="location-info">
-                        <h3>Andheri West</h3>
-                        <p>Emerging office-retail mix, value-conscious brands</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- BKC -->
-            <div class="location-card">
-                <img src="https://images.unsplash.com/photo-1486525920124-20f20bda5fb0?w=500&h=400&fit=crop" alt="BKC - Mumbai's Financial Hub">
-                <div class="location-overlay">
-                    <div class="location-info">
-                        <h3>BKC & Chandivali</h3>
-                        <p>Grade-A offices, corporate headquarters, modern infrastructure</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Khar & Juhu -->
-            <div class="location-card">
-                <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=500&h=400&fit=crop" alt="Khar & Juhu - Upscale Retail">
-                <div class="location-overlay">
-                    <div class="location-info">
-                        <h3>Khar & Juhu</h3>
-                        <p>Premium retail, jewellery brands, niche F&B concepts</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- South Mumbai -->
-            <div class="location-card">
-                <img src="https://images.unsplash.com/photo-1449844908441-8829872d2607?w=500&h=400&fit=crop" alt="South Mumbai - Heritage & Heritage Commercial">
-                <div class="location-overlay">
-                    <div class="location-info">
-                        <h3>South Mumbai</h3>
-                        <p>Heritage properties, established businesses, premium presence</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Property Details Modal -->
-<div id="propertyModal" class="property-modal">
-    <div class="modal-content">
-        <button class="modal-close" onclick="closePropertyModal()">✕</button>
-        <div id="modalPropertyDetails"></div>
-        <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center;">
-            <button class="btn-primary" onclick="showSection('contact'); closePropertyModal();">Inquire About This Property</button>
-        </div>
-    </div>
-</div>
-
-<!-- Visual Section Divider -->
-<img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=1600&h=400&fit=crop" alt="Section Divider - Modern Commercial Space" class="section-divider">
-
-<!-- Why Choose Section -->
-<section class="why-section">
-    <div class="container">
-        <h2 style="text-align: center;">Why Choose Ground Floor Shop?</h2>
-        <div class="why-grid">
-            <div class="why-item">
-                <div class="why-icon">✓</div>
-                <h3>500+ Verified Transactions</h3>
-                <p>Real track record. Every transaction verified and documented across Mumbai's best zones.</p>
-            </div>
-            <div class="why-item">
-                <div class="why-icon">⚡</div>
-                <h3>Fast Execution</h3>
-                <p>From listing to close in days, not months. Lean operations. Quick decisions.</p>
-            </div>
-            <div class="why-item">
-                <div class="why-icon">🔒</div>
-                <h3>Complete Transparency</h3>
-                <p>No hidden charges. Regulatory status. Lease terms. All clear from day one.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- CTA Section -->
-<section class="cta-section">
-    <div class="container">
-        <h2>Ready to Transform Your Deal?</h2>
-        <p>Join verified landlords, tenants, and investors. List your space or find your next opportunity.</p>
-        <div class="cta-buttons">
-            <button class="btn-primary" onclick="showSection('properties')">Search Properties</button>
-            <button class="btn-secondary" onclick="showSection('contact')">List Your Space</button>
-        </div>
-    </div>
-</section>
-
-<!-- Connect Section -->
-<section class="form-section" id="contact">
-    <div class="form-container">
-        <h2>Get in Touch</h2>
-        <p class="form-subtitle">Whether you're listing a space, searching for a tenant, or looking for your next opportunity—tell us what you're looking for. We'll connect you with verified matches within 24 hours.</p>
-
-        <div style="background: var(--light-bg); padding: 2rem; border-radius: 8px; margin-bottom: 3rem; border-left: 4px solid var(--accent-gold);">
-            <h4 style="color: var(--primary-text); margin-bottom: 1rem;">What Happens Next?</h4>
-            <ul style="margin-left: 1.5rem; line-height: 2;">
-                <li><strong>Within 2 hours:</strong> We review your inquiry and verify your details</li>
-                <li><strong>Within 24 hours:</strong> Personalized matches with comparable properties and comparable data</li>
-                <li><strong>Direct access:</strong> Connect directly with verified landlords, tenants, or investors—no intermediaries</li>
-                <li><strong>Ongoing support:</strong> Market insights, negotiation guidance, and documentation assistance through close</li>
-            </ul>
-        </div>
-
-        <form>
-            <div class="form-group">
-                <label>Your Name *</label>
-                <input type="text" placeholder="Full name" required>
-            </div>
-            <div class="form-group">
-                <label>Phone *</label>
-                <input type="tel" placeholder="+91 XXXXX XXXXX" required>
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" placeholder="your@email.com">
-            </div>
-            <div class="form-group">
-                <label>I am a... *</label>
-                <select required>
-                    <option>Select...</option>
-                    <option>Landlord (Looking to lease property)</option>
-                    <option>Owner (Looking to sell property)</option>
-                    <option>Tenant / Occupier (Looking for space)</option>
-                    <option>Investor (Looking for opportunity)</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Property Type *</label>
-                <select required>
-                    <option>Select...</option>
-                    <option>Retail Shop / F&B</option>
-                    <option>Office / Co-working</option>
-                    <option>Warehouse / Storage</option>
-                    <option>Mixed-Use</option>
-                    <option>Other</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label>Location/Zone *</label>
-                <input type="text" placeholder="e.g., Bandra West, Santacruz, Andheri, BKC, Chandivali" required>
-            </div>
-            <div class="form-group">
-                <label>Space Size (if applicable)</label>
-                <input type="text" placeholder="e.g., 1,500 sq ft or 100-200 sq ft range">
-            </div>
-            <div class="form-group">
-                <label>Budget / Rent Range *</label>
-                <input type="text" placeholder="e.g., ₹1L - ₹3L monthly or ₹2.5Cr - ₹4Cr for purchase" required>
-            </div>
-            <div class="form-group">
-                <label>What are you looking for?</label>
-                <textarea placeholder="Tell us more about your requirement, business type, timeline, or property details..." style="resize: vertical; min-height: 100px;"></textarea>
-            </div>
-            <button type="submit" class="form-submit">Send Inquiry</button>
-        </form>
-
-        <div style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--border); text-align: center;">
-            <p style="color: var(--secondary-text); font-size: 0.9rem; margin-bottom: 1.5rem;">Or reach out directly:</p>
-            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem;">
-                <div>
-                    <h4 style="margin-bottom: 0.5rem;">Phone</h4>
-                    <p style="color: var(--accent-gold); font-weight: 600; font-size: 1.1rem;">+91 7710019850</p>
-                    <p style="color: var(--secondary-text); font-size: 0.9rem;">Available 9 AM - 7 PM, Monday - Saturday</p>
-                </div>
-                <div>
-                    <h4 style="margin-bottom: 0.5rem;">Email</h4>
-                    <p style="color: var(--accent-gold); font-weight: 600; font-size: 1.1rem;">amjad@rentorsaleproperties.in</p>
-                    <p style="color: var(--secondary-text); font-size: 0.9rem;">Response within 2 hours during business hours</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Terms of Service Section -->
-<section class="legal-section" id="terms" style="display: none;">
-    <div class="container" style="max-width: 900px; padding: 4rem 2rem;">
-        <h2 style="margin-bottom: 2rem;">Terms of Service</h2>
-
-        <h3>1. Acceptance of Terms</h3>
-        <p>By accessing and using Ground Floor Shop ("the Platform"), you agree to be bound by these Terms of Service. If you do not agree to any part of these terms, you may not use the Platform.</p>
-
-        <h3>2. Use License</h3>
-        <p>Ground Floor Shop grants you a limited, non-exclusive, and non-transferable right to access and use the Platform for lawful purposes. You agree not to:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>Reproduce, modify, or distribute any content without permission</li>
-            <li>Engage in any unlawful or fraudulent activity</li>
-            <li>Provide false or misleading information in listings or communications</li>
-            <li>Violate any applicable laws or regulations</li>
-            <li>Harass, abuse, or threaten other users or staff members</li>
-        </ul>
-
-        <h3>3. Property Listings & Accuracy</h3>
-        <p>All property information is provided in good faith. Ground Floor Shop does not guarantee the accuracy of third-party information. Property owners and agents are responsible for ensuring their listings are accurate, current, and compliant with RERA regulations.</p>
-
-        <h3>4. RERA Compliance</h3>
-        <p>Ground Floor Shop operates under the Real Estate (Regulation and Development) Act, 2016. All registered properties comply with RERA guidelines. UberPod Realty Registration: MahaRERA A51800042560.</p>
-
-        <h3>5. Liability Disclaimer</h3>
-        <p>Ground Floor Shop is provided "as is" without warranties of any kind. We do not guarantee transactions, financial outcomes, or legal compliance. Users are responsible for conducting independent due diligence and seeking appropriate legal/financial advice.</p>
-
-        <h3>6. Transaction Liability</h3>
-        <p>Ground Floor Shop facilitates connections between parties but does not guarantee transaction completion. All commercial terms, legal obligations, and financial arrangements are between the parties directly. We assume no liability for transaction disputes.</p>
-
-        <h3>7. Intellectual Property</h3>
-        <p>All content, branding, and materials on Ground Floor Shop are the property of UberPod Realty or licensed partners. Unauthorized reproduction or use is prohibited.</p>
-
-        <h3>8. Indemnification</h3>
-        <p>You agree to indemnify and hold harmless Ground Floor Shop, UberPod Realty, and their representatives from any claims, damages, or losses arising from your use of the Platform or violation of these terms.</p>
-
-        <h3>9. Limitation of Liability</h3>
-        <p>Ground Floor Shop's total liability shall not exceed the amount paid by you (if any) for using the Platform in the preceding 12 months.</p>
-
-        <h3>10. Modifications to Terms</h3>
-        <p>We reserve the right to modify these terms at any time. Continued use of the Platform constitutes acceptance of modified terms.</p>
-
-        <p style="margin-top: 3rem; color: var(--secondary-text);">Last updated: September 2026</p>
-        <button class="btn-primary" onclick="showSection('home')" style="margin-top: 2rem;">Back to Home</button>
-    </div>
-</section>
-
-<!-- Privacy Policy Section -->
-<section class="legal-section" id="privacy" style="display: none;">
-    <div class="container" style="max-width: 900px; padding: 4rem 2rem;">
-        <h2 style="margin-bottom: 2rem;">Privacy Policy</h2>
-
-        <h3>1. Information Collection</h3>
-        <p>Ground Floor Shop collects information you provide directly (name, contact details, property preferences) and information collected automatically (browsing data, IP address, device information) to improve our service.</p>
-
-        <h3>2. Use of Information</h3>
-        <p>We use your information to:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>Connect property seekers with available listings</li>
-            <li>Process inquiries and facilitate transactions</li>
-            <li>Improve Platform functionality and user experience</li>
-            <li>Send service-related updates and communications</li>
-            <li>Comply with legal and regulatory obligations</li>
-        </ul>
-
-        <h3>3. Data Sharing</h3>
-        <p>We do not sell your personal information. We share data only with:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>Property owners/brokers when you express interest in their listings</li>
-            <li>Service providers assisting with Platform operations</li>
-            <li>Legal authorities when required by law</li>
-        </ul>
-
-        <h3>4. Data Security</h3>
-        <p>Ground Floor Shop implements industry-standard security measures to protect your information. However, no method of transmission over the internet is completely secure. We cannot guarantee absolute security.</p>
-
-        <h3>5. Cookies and Tracking</h3>
-        <p>We use cookies to enhance your experience. You can control cookie settings through your browser preferences.</p>
-
-        <h3>6. Data Retention</h3>
-        <p>We retain your information for as long as necessary to provide services and comply with legal obligations. You may request data deletion at any time, subject to legal retention requirements.</p>
-
-        <h3>7. Your Rights</h3>
-        <p>You have the right to:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>Access your personal information</li>
-            <li>Correct inaccurate data</li>
-            <li>Request deletion of your data (where applicable)</li>
-            <li>Opt-out of marketing communications</li>
-        </ul>
-
-        <h3>8. Third-Party Links</h3>
-        <p>Ground Floor Shop is not responsible for the privacy practices of external websites linked from our Platform.</p>
-
-        <h3>9. Children's Privacy</h3>
-        <p>Our Platform is not intended for users under 18 years of age. We do not knowingly collect information from minors.</p>
-
-        <h3>10. Contact & Grievances</h3>
-        <p>For privacy concerns or data requests, contact us at amjad@rentorsaleproperties.in</p>
-
-        <p style="margin-top: 3rem; color: var(--secondary-text);">Last updated: September 2026</p>
-        <button class="btn-primary" onclick="showSection('home')" style="margin-top: 2rem;">Back to Home</button>
-    </div>
-</section>
-
-<!-- RERA Compliance Section -->
-<section class="legal-section" id="rera" style="display: none;">
-    <div class="container" style="max-width: 900px; padding: 4rem 2rem;">
-        <h2 style="margin-bottom: 2rem;">RERA Compliance</h2>
-
-        <h3>Registration Details</h3>
-        <p><strong>Brokerage Name:</strong> UberPod Realty</p>
-        <p><strong>Registration Number:</strong> MahaRERA A51800042560</p>
-        <p><strong>State:</strong> Maharashtra</p>
-        <p><strong>Registration Authority:</strong> Maharashtra Real Estate Regulatory Authority (MahaRERA)</p>
-        <p><strong>Operating Zone:</strong> Mumbai Metropolitan Region (South Mumbai, Bandra, Khar, Santacruz, Andheri, BKC, Chandivali)</p>
-
-        <h3>Our RERA Commitments</h3>
-        <p>As a RERA-registered brokerage, Ground Floor Shop commits to:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>Adhere to all provisions of the Real Estate (Regulation and Development) Act, 2016</li>
-            <li>Maintain transparency in all property transactions</li>
-            <li>Disclose all material facts about properties listed on our Platform</li>
-            <li>Protect buyer/tenant interests through verified information</li>
-            <li>Comply with all MahaRERA guidelines and notifications</li>
-            <li>Resolve disputes through RERA grievance redressal mechanisms</li>
-        </ul>
-
-        <h3>Property Verification</h3>
-        <p>Every property listed on Ground Floor Shop undergoes verification against:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>Valid ownership documentation</li>
-            <li>RERA project registration (where applicable)</li>
-            <li>Municipal approvals and building permits</li>
-            <li>Environmental clearances (where required)</li>
-            <li>Clear title and encumbrance search</li>
-        </ul>
-
-        <h3>Buyer & Tenant Protection</h3>
-        <p>Ground Floor Shop facilitates RERA-compliant transactions with:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>Documented lease agreements following MahaRERA templates</li>
-            <li>Standardized terms protecting all parties</li>
-            <li>Escrow arrangements for security deposits (where applicable)</li>
-            <li>Dispute resolution support through regulatory channels</li>
-        </ul>
-
-        <h3>Prohibited Practices</h3>
-        <p>Ground Floor Shop strictly prohibits and does not facilitate:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>Black money or cash transactions</li>
-            <li>Unregistered or illegal property transfers</li>
-            <li>Violation of property use clauses</li>
-            <li>Fraudulent documentation or title claims</li>
-            <li>Harassment or coercion of parties</li>
-        </ul>
-
-        <h3>MahaRERA Complaint Redressal</h3>
-        <p><strong>Grievance Filing:</strong> Disputes can be filed with MahaRERA through their online portal or regional offices.</p>
-        <p><strong>Our Commitment:</strong> Ground Floor Shop cooperates fully with all MahaRERA investigations and provides complete documentation to regulatory authorities.</p>
-
-        <h3>Transparency Index</h3>
-        <p>Our verified transaction database maintains:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>500+ documented and verified transactions</li>
-            <li>Real-time market data across zones</li>
-            <li>Comparable transaction rates and trends</li>
-            <li>Clear pricing without hidden charges</li>
-        </ul>
-
-        <h3>Contact RERA</h3>
-        <p><strong>MahaRERA Mumbai Regional Office</strong><br/>
-        Phone: 1800-121-2366 (Toll Free)<br/>
-        Website: www.maharera.gov.in<br/>
-        For complaints: File online through MahaRERA portal</p>
-
-        <h3>Our Contact for RERA Matters</h3>
-        <p>Email: amjad@rentorsaleproperties.in<br/>
-        Phone: +91 77100 19850</p>
-
-        <p style="margin-top: 3rem; color: var(--secondary-text);">Last updated: September 2026 | RERA Registration MahaRERA A51800042560</p>
-        <button class="btn-primary" onclick="showSection('home')" style="margin-top: 2rem;">Back to Home</button>
-    </div>
-</section>
-
-<!-- About Section -->
-<section class="content-section" id="about" style="display: none;">
-    <div class="container" style="max-width: 900px; padding: 4rem 2rem;">
-        <h2 style="margin-bottom: 2rem;">About Ground Floor Shop</h2>
-
-        <h3>The Problem We Solve</h3>
-        <p>Mumbai's commercial real estate market is broken. Not technologically—broken structurally. A tenant searching for 2,000 sq ft retail space in Bandra still relies on:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>Phone calls to 50+ brokers with conflicting information</li>
-            <li>Days spent in Mumbai traffic visiting properties that don't match descriptions</li>
-            <li>Negotiations where neither party knows fair market value</li>
-            <li>Leases drafted without clarity on who pays what and when</li>
-            <li>3-6 months of elapsed time to close a simple lease</li>
-        </ul>
-        <p>This inefficiency doesn't just waste time—it costs money. Black-money pressure. Hidden charges. Disputed terms. Rental disputes. Unplanned lockouts.</p>
-
-        <h3>Our Story</h3>
-        <p>Ground Floor Shop was born from frustration. UberPod Realty, founded in 2024, had spent months facilitating transactions across South Mumbai, Bandra, Santacruz, Andheri, BKC, and Chandivali. We saw it clearly: the market had no central source of truth.</p>
-
-        <p>We recognized a fundamental insight: what if commercial leasing could work like a digital marketplace? Not like residential property portals—those rely on agents. We meant a true peer-to-peer marketplace where:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>Property owners list once and reach thousands of qualified occupiers</li>
-            <li>Tenants see verified comparable data before they negotiate</li>
-            <li>Transactions happen in days, not months</li>
-            <li>RERA-compliant documentation is standard, not an afterthought</li>
-            <li>Disputes are prevented, not fought</li>
-        </ul>
-
-        <p>So we built it. Ground Floor Shop started with the 150+ properties we had already verified, added comparable data from 500+ actual transactions, and created matching algorithms that connect the right tenant with the right space. No intermediaries. No commissions. No surprises.</p>
-
-        <h3>Our Mission & Commitment</h3>
-        <p><strong>Democratize commercial real estate in Mumbai.</strong> Not through disruption, but through transparency. We believe commercial property transactions are too important to be opaque, too valuable to be slowed down, and too frequent to require consultants.</p>
-
-        <p>Every property listed on Ground Floor Shop is:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li><strong>Verified:</strong> Physical inspection, legal documentation review, compliance check</li>
-            <li><strong>Comparable:</strong> Placed in context of zone-wise rates, micro-location premiums, and similar recent transactions</li>
-            <li><strong>Clear:</strong> Terms explained in plain English. No hidden rental escalations. No surprise maintenance charges</li>
-            <li><strong>RERA-compliant:</strong> All mandatory disclosures included. No legal ambiguity</li>
-            <li><strong>Fair:</strong> Landlord expectations grounded in market data, not speculation</li>
-        </ul>
-
-        <h3>Why Ground-Floor Commercial?</h3>
-        <p>Ground-floor commercial spaces are the backbone of Mumbai's retail and F&B ecosystem. Every successful restaurant, boutique, salon, and service center on your street started with a ground-floor lease decision. These decisions—location, rate, terms—shape business success.</p>
-
-        <p>We specialize in this micro-segment because we know it thoroughly: Bandra's Linking Road vs Carter Road (30% rate difference for same space quality). Santacruz's retail stretch along Vile Parle Road. Andheri's emerging office-retail mix. BKC's premium office corridors. Chandivali's next-generation mixed-use development.</p>
-
-        <p>We've completed 500+ transactions across these zones. We've mapped zone-wise rent patterns, identified micro-location premiums, and documented what actually drives successful leases. This knowledge powers every search, every valuation, every recommendation on our platform.</p>
-
-        <h3>Who We Serve</h3>
-        <p><strong>For Property Owners:</strong> List once. Reach thousands. Close faster. Know fair market value before negotiations begin. Avoid bad tenants through our verification process.</p>
-
-        <p><strong>For Tenants & Occupiers:</strong> Find comparable properties. Understand fair pricing. Negotiate from a position of data, not desperation. Close leases quickly with clear terms.</p>
-
-        <p><strong>For Investors:</strong> Track zone-wise appreciation patterns. Identify emerging opportunities. Make capital decisions based on real market data, not speculation.</p>
-
-        <h3>Our Founding Team</h3>
-        <p>Ground Floor Shop is founded and led by Amjad Shaikh, with deep roots in Mumbai's commercial real estate ecosystem. Our founding team brings:</p>
-        <ul style="margin-left: 2rem; line-height: 1.8;">
-            <li>15+ years of hands-on real estate experience across Mumbai zones</li>
-            <li>Legal expertise in MahaRERA, lease documentation, and transaction structuring</li>
-            <li>Technology background in platform building, data aggregation, and matching algorithms</li>
-            <li>Market research capabilities: we analyze comps, track trends, publish findings</li>
-            <li>Direct relationships across landlords, brokers, investors, and occupiers</li>
-        </ul>
-
-        <p>We're not outsiders trying to digitize real estate. We live in Mumbai. We've done these deals. We know what works and what doesn't. Ground Floor Shop reflects everything we've learned about what makes commercial leasing honest, fast, and fair.</p>
-
-        <button class="btn-primary" onclick="showSection('home')" style="margin-top: 3rem;">Back to Home</button>
-    </div>
-</section>
-
-
-<!-- Blog Section -->
-<section class="content-section" id="blog" style="display: none;">
-    <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=1600&h=400&fit=crop" alt="Blog Section Header - Commercial Insights" class="section-divider" style="margin: -4rem 0 2rem 0; border-radius: 0;">
-    <div class="container" style="max-width: 900px; padding: 4rem 2rem;">
-        <h2 style="margin-bottom: 3rem;">Blog & Market Insights</h2>
-
-        <div style="display: grid; gap: 3rem;">
-            <!-- Blog Post 1 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">Ground-Floor Commercial Rates in Bandra West: A Zone-by-Zone Breakdown</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>September 2026 | 8 min read</small></p>
-                <p>Bandra West remains Mumbai's premium commercial destination. From retail along Linking Road to F&B along Carter Road, location determines value. We analyzed 150+ recent transactions to map zone-wise rates, premium factors, and what drives landlord expectations. Learn how micro-location within Bandra West can swing rates by 30-40%.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 2 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">5 Non-Negotiables in Ground-Floor Commercial Lease Agreements</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>September 2026 | 6 min read</small></p>
-                <p>We've closed 500+ deals. Here are the 5 terms that separate smooth transactions from legal nightmares: breakup clauses, operating expense caps, maintenance responsibility splits, renewal terms, and exit provisions. Learn what to ask for and what to avoid. Don't sign until you understand these core protections.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 3 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">Santacruz West vs Andheri West: Where's the Real Deal for Your Business?</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>September 2026 | 7 min read</small></p>
-                <p>Both zones have retail presence, foot traffic, and business potential. But rent economics, tenant mix, and growth trajectory differ significantly. We compared 80+ properties across both zones to help you choose based on your business type, budget, and long-term goals. Which zone fits your business model?</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 4 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">The True Cost of Ground-Floor Commercial: Beyond Rent</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>September 2026 | 9 min read</small></p>
-                <p>Monthly rent is just one line item. Property tax, operating expenses, maintenance charges, parking premiums, and signage allowances add up quickly. Our detailed breakdown shows what real costs look like across Mumbai's top commercial zones and strategic negotiation tips for controlling hidden expenses.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 5 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">RERA Compliance for Ground-Floor Commercial: What Property Owners Need to Know</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>September 2026 | 7 min read</small></p>
-                <p>The Real Estate Regulation and Development Act applies to commercial leasing too. Understand mandatory disclosures, documentation requirements, and how MahaRERA protects both owners and tenants. Non-compliance can result in penalties up to ₹10 lakhs—here's what you must do to stay compliant.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 6 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">Negotiating Like a Pro: 10 Tactics for Ground-Floor Tenants</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>September 2026 | 8 min read</small></p>
-                <p>Landlords have leverage, but you have options. From advance research to comparable analysis to creative deal structures, here are 10 proven tactics successful tenants use to secure better rates, flexible terms, and favorable lease conditions. Backed by our 500+ real transactions database.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 7 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">The Rise of F&B on Ground-Floor Commercial: Trends, Challenges, Opportunities</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>September 2026 | 10 min read</small></p>
-                <p>Food & beverage is driving ground-floor commercial demand in Bandra, Santacruz, and Andheri. We analyzed licensing requirements, operational constraints, rent expectations, and success factors for restaurants, cafes, and cloud kitchens. What makes an F&B space successful and how to evaluate locations?</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 8 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">From Search to Lease: The Ground Floor Shop Process Explained</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>September 2026 | 5 min read</small></p>
-                <p>Why does finding ground-floor commercial space take so long? We explain the typical workflow—from initial search to property viewing to negotiations to final documentation—and show how our platform cuts timelines from months down to weeks while maintaining transparency and regulatory compliance.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 9 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">BKC vs South Mumbai Commercial: Where Should Your Office Be?</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>August 2026 | 8 min read</small></p>
-                <p>BKC offers modern infrastructure and premium connectivity; South Mumbai provides heritage appeal and established networks. We compared office space availability, rates, commute patterns, and growth potential across both regions to help you make an informed location decision for your enterprise.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 10 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">Exit Clauses That Actually Protect You: A Tenant's Guide</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>August 2026 | 6 min read</small></p>
-                <p>Not every lease works out. Business pivots, expansion plans change, or circumstances force relocation. A well-structured exit clause can save you from being trapped in an unsuitable lease. Learn the types of exit provisions available, how to negotiate them, and what language to use.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 11 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">Chandivali: Mumbai's Emerging Commercial Hub—What You Need to Know</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>August 2026 | 7 min read</small></p>
-                <p>Chandivali is rapidly transforming into a premium commercial and residential destination. We analyzed infrastructure development, connectivity improvements, and commercial space availability to show why this emerging zone is becoming increasingly attractive for businesses seeking growth potential beyond traditional commercial areas.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 12 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">Retail vs F&B vs Office: Which Commercial Space Type Appreciates Fastest?</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>August 2026 | 9 min read</small></p>
-                <p>Commercial property appreciation varies dramatically by asset class. Retail spaces appreciate through foot-traffic growth; office spaces through corporate demand; F&B through brand value. We analyzed 10-year appreciation trends across property types to help investors make informed capital allocation decisions.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 13 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">Parking in Commercial Leases: Why It Matters More Than You Think</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>August 2026 | 6 min read</small></p>
-                <p>Parking isn't a luxury feature—it's operational necessity. Inadequate parking kills businesses. We analyzed parking economics, legal requirements, negotiation strategies, and documented how many deals collapse over parking disputes. Learn to evaluate parking critically and structure favorable parking terms.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 14 -->
-            <article style="padding-bottom: 2rem; border-bottom: 1px solid var(--border);">
-                <h3 style="margin-bottom: 0.5rem;">Commercial Property Investment: Yield vs Growth Trade-off in Mumbai Zones</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>July 2026 | 10 min read</small></p>
-                <p>Some zones deliver steady rental income; others offer explosive capital appreciation potential. We mapped yield patterns and growth trajectories across Mumbai's key commercial areas—Bandra, Santacruz, Andheri, BKC—to help investors choose zones matching their risk-return objectives and investment timelines.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-
-            <!-- Blog Post 15 -->
-            <article>
-                <h3 style="margin-bottom: 0.5rem;">The Complete Landlord Checklist: Screening Tenants, Legal Documentation, Long-term Profitability</h3>
-                <p style="color: var(--secondary-text); margin-bottom: 1rem;"><small>July 2026 | 11 min read</small></p>
-                <p>Good tenants make great investments. Bad tenants create legal nightmares and lost income. We created a comprehensive checklist for landlords: background verification processes, documentation requirements, lease clause essentials, and dispute resolution strategies. Protect your asset and maximize returns long-term.</p>
-                <p style="color: var(--accent-gold); cursor: pointer; font-weight: 600;">Read More →</p>
-            </article>
-        </div>
-
-        <button class="btn-primary" onclick="showSection('home')" style="margin-top: 3rem;">Back to Home</button>
-    </div>
-</section>
-
-<!-- Footer -->
-<footer>
-    <div class="footer-container">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <h4>Platform</h4>
-                <a href="#" onclick="showSection('properties')">Search Properties</a>
-                <a href="#" onclick="showSection('contact')">List Your Space</a>
-            </div>
-            <div class="footer-col">
-                <h4>About</h4>
-                <a href="#" onclick="showSection('about')">Our Story</a>
-                <a href="#" onclick="showSection('blog')">Blog</a>
-                <a href="#" onclick="showSection('contact')">Contact</a>
-            </div>
-            <div class="footer-col">
-                <h4>Coverage</h4>
-                <p style="color: rgba(255, 255, 255, 0.7); font-size: 0.9rem; line-height: 1.8;">
-                    Bandra & Khar<br/>
-                    Santacruz & Juhu<br/>
-                    Andheri West<br/>
-                    BKC & Chandivali
-                </p>
-            </div>
-            <div class="footer-col">
-                <h4>Legal</h4>
-                <a href="#" onclick="showSection('terms')">Terms of Service</a>
-                <a href="#" onclick="showSection('privacy')">Privacy Policy</a>
-                <a href="#" onclick="showSection('rera')">RERA Compliance</a>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>© 2026 Ground Floor Shop. Transparent marketplace. Direct connections. Fast execution.</p>
-        </div>
-    </div>
-</footer>
-
-<script>
-    function showSection(section) {
-        // Hide all sections
-        const sections = ['home', 'properties', 'terms', 'privacy', 'rera', 'about', 'blog', 'contact'];
-        sections.forEach(id => {
-            const el = document.getElementById(id);
-            if (el) el.style.display = 'none';
-        });
-
-        // Show selected section
-        const selectedSection = document.getElementById(section);
-        if (selectedSection) {
-            selectedSection.style.display = 'block';
-            // Scroll to the section after DOM reflow
-            requestAnimationFrame(() => {
-                // Get header height to offset scroll
-                const header = document.querySelector('header');
-                const headerHeight = header ? header.offsetHeight : 0;
-                const elementPosition = selectedSection.getBoundingClientRect().top + window.scrollY - headerHeight;
-                window.scrollTo({
-                    top: elementPosition,
-                    behavior: 'smooth'
-                });
-            });
-        }
-
-        // Update nav
-        document.querySelectorAll('.nav-link').forEach(a => a.classList.remove('active'));
-    }
-
-    function toggleMobileMenu() {
-        const hamburger = document.getElementById('hamburgerBtn');
-        const mobileMenu = document.getElementById('mobileMenu');
-        hamburger.classList.toggle('active');
-        mobileMenu.classList.toggle('active');
-    }
-
-    // Initialize
-    document.getElementById('home').style.display = 'block';
-
-    // Hero image placeholder - will be replaced with actual image
-    function loadHeroImage(imageUrl) {
-        const heroImage = document.getElementById('heroImage');
-        heroImage.style.backgroundImage = `url('${imageUrl}')`;
-        heroImage.style.backgroundSize = 'cover';
-        heroImage.style.backgroundPosition = 'center';
-        heroImage.classList.add('loaded');
-        heroImage.innerHTML = '';
-    }
-
-    // Load hero image on page load
-    document.addEventListener('DOMContentLoaded', function() {
-        loadHeroImage('https://images.unsplash.com/photo-1758448500766-fdbb9f0925bc?w=1600&h=900&fit=crop');
-    });
-
-    // Initialize filter section toggling
-    document.querySelectorAll('.filter-section-header').forEach(header => {
-        header.addEventListener('click', function() {
-            this.classList.toggle('active');
-            const options = this.nextElementSibling;
-            options.classList.toggle('active');
-        });
-        // Expand first section by default
-        if (header === document.querySelector('.filter-section-header')) {
-            header.classList.add('active');
-            header.nextElementSibling.classList.add('active');
-        }
-    });
-
-    // Add sourcing badges to property cards
-    document.addEventListener('DOMContentLoaded', function() {
-        document.querySelectorAll('.property-card-compact').forEach(card => {
-            const isDirect = card.getAttribute('data-direct') === 'true';
-            const badge = document.createElement('div');
-            badge.className = `sourcing-badge ${isDirect ? 'direct' : 'indirect'}`;
-            badge.innerHTML = isDirect ? '🔗 Direct' : '↔️ Indirect';
-            card.appendChild(badge);
-        });
-    });
-
-    // Comprehensive multi-filter function
-    function applyFilters() {
-        const cards = document.querySelectorAll('.property-card-compact');
-        let visibleCount = 0;
-
-        // Get all selected filter values
-        const selectedFilters = {
-            sourcing: Array.from(document.querySelectorAll('[data-filter="sourcing"]:checked')).map(el => el.value),
-            location: Array.from(document.querySelectorAll('[data-filter="location"]:checked')).map(el => el.value),
-            type: Array.from(document.querySelectorAll('[data-filter="type"]:checked')).map(el => el.value),
-            priceRange: Array.from(document.querySelectorAll('[data-filter="price-range"]:checked')).map(el => el.value),
-            sizeRange: Array.from(document.querySelectorAll('[data-filter="size-range"]:checked')).map(el => el.value),
-            transaction: Array.from(document.querySelectorAll('[data-filter="transaction"]:checked')).map(el => el.value)
-        };
-
-        // Filter each property card
-        cards.forEach(card => {
-            let shouldShow = true;
-
-            // Sourcing filter
-            if (selectedFilters.sourcing.length > 0) {
-                const isDirect = card.getAttribute('data-direct') === 'true';
-                const cardSourcing = isDirect ? 'direct' : 'indirect';
-                shouldShow = shouldShow && selectedFilters.sourcing.includes(cardSourcing);
-            }
-
-            // Location filter
-            if (selectedFilters.location.length > 0) {
-                shouldShow = shouldShow && selectedFilters.location.includes(card.getAttribute('data-location'));
-            }
-
-            // Type filter
-            if (selectedFilters.type.length > 0) {
-                shouldShow = shouldShow && selectedFilters.type.includes(card.getAttribute('data-type'));
-            }
-
-            // Price range filter
-            if (selectedFilters.priceRange.length > 0) {
-                shouldShow = shouldShow && selectedFilters.priceRange.includes(card.getAttribute('data-price-range'));
-            }
-
-            // Size range filter
-            if (selectedFilters.sizeRange.length > 0) {
-                shouldShow = shouldShow && selectedFilters.sizeRange.includes(card.getAttribute('data-size-range'));
-            }
-
-            // Transaction filter
-            if (selectedFilters.transaction.length > 0) {
-                shouldShow = shouldShow && selectedFilters.transaction.includes(card.getAttribute('data-transaction'));
-            }
-
-            // Apply visibility
-            card.style.display = shouldShow ? 'block' : 'none';
-            if (shouldShow) visibleCount++;
-        });
-
-        // Update results counter
-        updateFilterResults(visibleCount);
-    }
-
-    // Update filter results counter
-    function updateFilterResults(count) {
-        const resultText = document.getElementById('filterResultsText');
-        if (resultText) {
-            resultText.innerHTML = `Showing <strong>${count}</strong> propert${count === 1 ? 'y' : 'ies'}`;
-        }
-    }
-
-    // Reset all filters
-    function resetAllFilters() {
-        // Uncheck all checkboxes
-        document.querySelectorAll('[data-filter]').forEach(checkbox => {
-            if (checkbox.type === 'checkbox') {
-                checkbox.checked = false;
-            }
-        });
-
-        // Show all cards
-        document.querySelectorAll('.property-card-compact').forEach(card => {
-            card.style.display = 'block';
-        });
-
-        // Update counter
-        updateFilterResults(document.querySelectorAll('.property-card-compact').length);
-    }
-
-    // Old filterProperties function for backwards compatibility
-    function filterProperties(location) {
-        resetAllFilters();
-        if (location !== 'all') {
-            document.querySelector(`[data-filter="location"][value="${location}"]`).checked = true;
-            applyFilters();
-        }
-    }
-
-    // Open Property Modal
-    function openPropertyModal(cardElement) {
-        const hiddenData = cardElement.querySelector('.hidden-data');
-        const fullProperty = hiddenData.querySelector('.full-property').innerHTML;
-
-        document.getElementById('modalPropertyDetails').innerHTML = fullProperty;
-        document.getElementById('propertyModal').classList.add('active');
-        document.body.style.overflow = 'hidden';
-    }
-
-    // Close Property Modal
-    function closePropertyModal() {
-        document.getElementById('propertyModal').classList.remove('active');
-        document.body.style.overflow = 'auto';
-    }
-
-    // Close modal on background click
-    document.getElementById('propertyModal')?.addEventListener('click', function(e) {
-        if (e.target === this) {
-            closePropertyModal();
-        }
-    });
-
-    // Close modal on Escape key
-    document.addEventListener('keydown', function(e) {
-        if (e.key === 'Escape') {
-            closePropertyModal();
-        }
-    });
-</script>
-
 </body>
 </html>
